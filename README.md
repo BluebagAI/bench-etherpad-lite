@@ -1,3 +1,5 @@
+> **Benchmark copy.** This repository is an unmodified copy of [ether/etherpad-lite](https://github.com/ether/etherpad-lite) at commit [`5afaa2f3eb7097dac27e9ca35edc5053e4dc39c7`](https://github.com/ether/etherpad-lite/commit/5afaa2f3eb7097dac27e9ca35edc5053e4dc39c7), used to benchmark CI runners on the project's own Playwright suite. It is not affiliated with or endorsed by the project. The only changes: this note, `.github/workflows/bench.yml` (run by hand only), and the project's other GitHub Actions workflows and Dependabot config removed so nothing runs on its own. The project's license applies (see the license file). Each benchmark run's logs and test results are saved on the [`bench-results`](../../tree/bench-results) branch.
+
 # Etherpad — the editor for documents that matter
 
 > Real-time collaborative editing where authorship is the default, your server is the only server, and you decide what AI (if any) ever touches your text.
