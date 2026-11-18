@@ -1,0 +1,1107 @@
+﻿2026-11-18T07:06:14.2360684Z Current runner version: '2.338.2'
+2026-11-18T07:06:14.2363977Z Runner name: 'blacksmith-4vcpu-ubuntu-2404-px46qxud4x3b5gwa'
+2026-11-18T07:06:14.2364647Z Runner group name: 'blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404'
+2026-11-18T07:06:14.2365412Z Machine name: 'ip-172-31-73-130'
+2026-11-18T07:06:14.2367032Z ##[group]GITHUB_TOKEN Permissions
+2026-11-18T07:06:14.2367601Z Actions: read
+2026-11-18T07:06:14.2367970Z Checks: write
+2026-11-18T07:06:14.2368328Z Contents: read
+2026-11-18T07:06:14.2368665Z Metadata: read
+2026-11-18T07:06:14.2369037Z PullRequests: write
+2026-11-18T07:06:14.2369386Z ##[endgroup]
+2026-11-18T07:06:14.2370757Z Secret source: Actions
+2026-11-18T07:06:14.2371346Z Cache mode: write
+2026-11-18T07:06:14.2371736Z Prepare workflow directory
+2026-11-18T07:06:14.2578402Z Prepare all required actions
+2026-11-18T07:06:14.2604533Z Getting action download info
+2026-11-18T07:06:14.6488801Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-18T07:06:14.6866442Z Download action repository 'actions/cache@v6' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-18T07:06:14.7532152Z Download action repository 'pnpm/action-setup@v6.1.1' (SHA:73e46992e05b19abd31f2f3c20e0e7370d762115)
+2026-11-18T07:06:15.3719523Z Download action repository 'actions/setup-node@v7' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-11-18T07:06:16.1611266Z Download action repository 'coldteadotai/boba@v1' (SHA:4ca4c1926a0f3307fc0d9f0f5c07aa08c2b6586a)
+2026-11-18T07:06:17.0370599Z Download action repository 'actions/upload-artifact@v7' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-18T07:06:17.7130385Z Setting BLACKSMITH_ACTIONS_RESULTS_URL to https://results-receiver.actions.githubusercontent.com/
+2026-11-18T07:06:17.7154262Z Complete job name: Playwright Firefox (blacksmith-4)
+2026-11-18T07:06:17.7571058Z A job started hook has been configured by the self-hosted runner administrator
+2026-11-18T07:06:17.7674384Z ##[group]Run '/setup.sh'
+2026-11-18T07:06:17.7685019Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-18T07:06:17.7685417Z env:
+2026-11-18T07:06:17.7685564Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 213
+2026-11-18T07:06:17.7685750Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 780
+2026-11-18T07:06:17.7685923Z   BLACKSMITH_CHECK_RUN_ID: 134638536446
+2026-11-18T07:06:17.7686131Z   BLACKSMITH_JOB_DISPLAY_NAME: Playwright Firefox (blacksmith-4)
+2026-11-18T07:06:17.7686361Z   GITHUB_ACTIONS_CACHE_MODE: write
+2026-11-18T07:06:17.7686533Z ##[endgroup]
+2026-11-18T07:06:17.7920302Z Logging daemon started (blacksmithd for logs)
+2026-11-18T07:06:17.8058793Z Results daemon started (blacksmithd for results)
+2026-11-18T07:06:17.8192873Z Background adoption and SSH setup started (PID: 3276)
+2026-11-18T07:06:17.8193335Z 
+2026-11-18T07:06:17.8193647Z ----------------------------------------
+2026-11-18T07:06:17.8194050Z View this job: https://app.blacksmith.sh/BluebagAI/runs/44256252884/jobs/134638536446
+2026-11-18T07:06:17.8194378Z SSH Access (using your GitHub SSH key):
+2026-11-18T07:06:17.8194734Z   ssh -p 64002 runner@blacksmith-4vcpu-ubuntu-2404-px46qxud4x3b5gwa.vm.blacksmith.sh
+2026-11-18T07:06:17.8195072Z 
+2026-11-18T07:06:17.8195208Z No GitHub SSH key? Add one at:
+2026-11-18T07:06:17.8195602Z https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+2026-11-18T07:06:17.8195943Z 
+2026-11-18T07:06:17.8196090Z ----------------------------------------
+2026-11-18T07:06:17.8196270Z 
+2026-11-18T07:06:17.8196459Z VM ID: blacksmith-4vcpu-ubuntu-2404-px46qxud4x3b5gwa
+2026-11-18T07:06:17.8196739Z Host: production-192.240.237.5-x8664
+2026-11-18T07:06:17.8196979Z Host Agent PID: 2831327
+2026-11-18T07:06:17.8197195Z Host Agent Git SHA: 08f1db49d
+2026-11-18T07:06:17.8197443Z Host CPU Manufacturer: GenuineIntel
+2026-11-18T07:06:17.8197719Z Blacksmith Host Generation: gen 1
+2026-11-18T07:06:17.8197972Z Petname: production-tolerant-calf-7c3947b1
+2026-11-18T07:06:17.8198227Z Region: us-west
+2026-11-18T07:06:17.8198477Z Rootfs Version: ubuntu24-full-x64-081926
+2026-11-18T07:06:17.8213268Z OS Version: Ubuntu 24.04.4 LTS
+2026-11-18T07:06:17.8213704Z 
+2026-11-18T07:06:17.8213865Z Enabling Blacksmith transparent cache
+2026-11-18T07:06:17.8416700Z ##[group]Run actions/checkout@v7
+2026-11-18T07:06:17.8416921Z with:
+2026-11-18T07:06:17.8417084Z   repository: BluebagAI/bench-etherpad-lite
+2026-11-18T07:06:17.8418425Z   token: ***
+2026-11-18T07:06:17.8418566Z   ssh-strict: true
+2026-11-18T07:06:17.8418710Z   ssh-user: git
+2026-11-18T07:06:17.8418853Z   persist-credentials: true
+2026-11-18T07:06:17.8419010Z   clean: true
+2026-11-18T07:06:17.8419158Z   sparse-checkout-cone-mode: true
+2026-11-18T07:06:17.8419326Z   fetch-depth: 1
+2026-11-18T07:06:17.8419457Z   fetch-tags: false
+2026-11-18T07:06:17.8419594Z   show-progress: true
+2026-11-18T07:06:17.8419735Z   lfs: false
+2026-11-18T07:06:17.8419928Z   submodules: false
+2026-11-18T07:06:17.8420069Z   set-safe-directory: true
+2026-11-18T07:06:17.8420230Z   allow-unsafe-pr-checkout: false
+2026-11-18T07:06:17.8420412Z env:
+2026-11-18T07:06:17.8420539Z   PNPM_HOME: ~/.pnpm-store
+2026-11-18T07:06:17.8420698Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 213
+2026-11-18T07:06:17.8420910Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 780
+2026-11-18T07:06:17.8421106Z   GITHUB_REPO_NAME: BluebagAI/bench-etherpad-lite
+2026-11-18T07:06:17.8421291Z ##[endgroup]
+2026-11-18T07:06:17.9747846Z Syncing repository: BluebagAI/bench-etherpad-lite
+2026-11-18T07:06:17.9748688Z ##[group]Getting Git version info
+2026-11-18T07:06:17.9748963Z Working directory is '/home/runner/_work/bench-etherpad-lite/bench-etherpad-lite'
+2026-11-18T07:06:17.9749337Z [command]/usr/local/bin/git version
+2026-11-18T07:06:17.9912856Z git version 2.55.0
+2026-11-18T07:06:17.9929592Z ##[endgroup]
+2026-11-18T07:06:17.9936850Z Temporarily overriding HOME='/home/runner/_work/_temp/1752b514-03e8-4c2a-b538-8a981fb4c987' before making global git config changes
+2026-11-18T07:06:17.9937600Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-18T07:06:17.9942677Z [command]/usr/local/bin/git config --global --add safe.directory /home/runner/_work/bench-etherpad-lite/bench-etherpad-lite
+2026-11-18T07:06:17.9984422Z Deleting the contents of '/home/runner/_work/bench-etherpad-lite/bench-etherpad-lite'
+2026-11-18T07:06:17.9987201Z ##[group]Determining repository object format
+2026-11-18T07:06:17.9988742Z ##[endgroup]
+2026-11-18T07:06:17.9989193Z ##[group]Initializing the repository
+2026-11-18T07:06:17.9994208Z [command]/usr/local/bin/git init /home/runner/_work/bench-etherpad-lite/bench-etherpad-lite
+2026-11-18T07:06:18.0065653Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-18T07:06:18.0066266Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-18T07:06:18.0066821Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-18T07:06:18.0067225Z hint: call:
+2026-11-18T07:06:18.0067450Z hint:
+2026-11-18T07:06:18.0067782Z hint: 	git config --global init.defaultBranch <name>
+2026-11-18T07:06:18.0068141Z hint:
+2026-11-18T07:06:18.0068473Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-18T07:06:18.0069020Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-18T07:06:18.0069437Z hint:
+2026-11-18T07:06:18.0069674Z hint: 	git branch -m <name>
+2026-11-18T07:06:18.0070078Z hint:
+2026-11-18T07:06:18.0070452Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-18T07:06:18.0071111Z Initialized empty Git repository in /home/runner/_work/bench-etherpad-lite/bench-etherpad-lite/.git/
+2026-11-18T07:06:18.0074483Z [command]/usr/local/bin/git remote add origin https://github.com/BluebagAI/bench-etherpad-lite
+2026-11-18T07:06:18.0127372Z ##[endgroup]
+2026-11-18T07:06:18.0128060Z ##[group]Disabling automatic garbage collection
+2026-11-18T07:06:18.0130757Z [command]/usr/local/bin/git config --local gc.auto 0
+2026-11-18T07:06:18.0171959Z ##[endgroup]
+2026-11-18T07:06:18.0173065Z ##[group]Setting up auth
+2026-11-18T07:06:18.0173580Z Removing SSH command configuration
+2026-11-18T07:06:18.0177390Z [command]/usr/local/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T07:06:18.0220756Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T07:06:18.0413123Z Removing HTTP extra header
+2026-11-18T07:06:18.0418992Z [command]/usr/local/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T07:06:18.0460150Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T07:06:18.0623513Z Removing includeIf entries pointing to credentials config files
+2026-11-18T07:06:18.0629025Z [command]/usr/local/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T07:06:18.0671412Z [command]/usr/local/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T07:06:18.0858498Z [command]/usr/local/bin/git config --file /home/runner/_work/_temp/git-credentials-bfbe0ead-aa6e-4333-80ac-8e0c952e5401.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-18T07:06:18.0914982Z [command]/usr/local/bin/git config --local includeIf.gitdir:/home/runner/_work/bench-etherpad-lite/bench-etherpad-lite/.git.path /home/runner/_work/_temp/git-credentials-bfbe0ead-aa6e-4333-80ac-8e0c952e5401.config
+2026-11-18T07:06:18.0954579Z [command]/usr/local/bin/git config --local includeIf.gitdir:/home/runner/_work/bench-etherpad-lite/bench-etherpad-lite/.git/worktrees/*.path /home/runner/_work/_temp/git-credentials-bfbe0ead-aa6e-4333-80ac-8e0c952e5401.config
+2026-11-18T07:06:18.0988279Z [command]/usr/local/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-bfbe0ead-aa6e-4333-80ac-8e0c952e5401.config
+2026-11-18T07:06:18.1024596Z [command]/usr/local/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-bfbe0ead-aa6e-4333-80ac-8e0c952e5401.config
+2026-11-18T07:06:18.1061386Z ##[endgroup]
+2026-11-18T07:06:18.1061963Z ##[group]Fetching the repository
+2026-11-18T07:06:18.1068786Z [command]/usr/local/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c8d95be90dd9b40d3aec77cba25a7ab0f5c96cdf:refs/remotes/origin/main
+2026-11-18T07:06:19.5337728Z From https://github.com/BluebagAI/bench-etherpad-lite
+2026-11-18T07:06:19.5338464Z  * [new ref]         c8d95be90dd9b40d3aec77cba25a7ab0f5c96cdf -> origin/main
+2026-11-18T07:06:19.5366163Z [command]/usr/local/bin/git branch --list --remote origin/main
+2026-11-18T07:06:19.5393467Z   origin/main
+2026-11-18T07:06:19.5400973Z [command]/usr/local/bin/git rev-parse refs/remotes/origin/main
+2026-11-18T07:06:19.5430261Z c8d95be90dd9b40d3aec77cba25a7ab0f5c96cdf
+2026-11-18T07:06:19.5432652Z ##[endgroup]
+2026-11-18T07:06:19.5433109Z ##[group]Determining the checkout info
+2026-11-18T07:06:19.5433865Z ##[endgroup]
+2026-11-18T07:06:19.5438996Z [command]/usr/local/bin/git sparse-checkout disable
+2026-11-18T07:06:19.5469973Z [command]/usr/local/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-18T07:06:19.5499275Z ##[group]Checking out the ref
+2026-11-18T07:06:19.5502498Z [command]/usr/local/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-18T07:06:19.6190668Z Switched to a new branch 'main'
+2026-11-18T07:06:19.6191227Z branch 'main' set up to track 'origin/main'.
+2026-11-18T07:06:19.6193975Z ##[endgroup]
+2026-11-18T07:06:19.6238155Z [command]/usr/local/bin/git log -1 --format=%H
+2026-11-18T07:06:19.6270150Z c8d95be90dd9b40d3aec77cba25a7ab0f5c96cdf
+2026-11-18T07:06:19.7341144Z ##[group]Run actions/cache@v6
+2026-11-18T07:06:19.7341386Z with:
+2026-11-18T07:06:19.7341554Z   path: ~/.pnpm-store
+2026-11-18T07:06:19.7341906Z   key: Linux-pnpm-store-d6428897bbeaf16a3ec91521a8ce44c456af69cd4b95c6f95687df54612db556
+2026-11-18T07:06:19.7342294Z   restore-keys: Linux-pnpm-store-
+
+2026-11-18T07:06:19.7342529Z   enableCrossOsArchive: false
+2026-11-18T07:06:19.7342741Z   fail-on-cache-miss: false
+2026-11-18T07:06:19.7342953Z   lookup-only: false
+2026-11-18T07:06:19.7343135Z   save-always: false
+2026-11-18T07:06:19.7343307Z env:
+2026-11-18T07:06:19.7343472Z   PNPM_HOME: ~/.pnpm-store
+2026-11-18T07:06:19.7343715Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 213
+2026-11-18T07:06:19.7343977Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 780
+2026-11-18T07:06:19.7344231Z   GITHUB_REPO_NAME: BluebagAI/bench-etherpad-lite
+2026-11-18T07:06:19.7344491Z ##[endgroup]
+2026-11-18T07:06:20.0259721Z Cache not found for input keys: Linux-pnpm-store-d6428897bbeaf16a3ec91521a8ce44c456af69cd4b95c6f95687df54612db556, Linux-pnpm-store-
+2026-11-18T07:06:20.0722350Z ##[group]Run actions/cache@v6
+2026-11-18T07:06:20.0722629Z with:
+2026-11-18T07:06:20.0722845Z   path: ~/.cache/ms-playwright
+2026-11-18T07:06:20.0723294Z   key: Linux-playwright-31ef7bd5f30c4727b0e0bee005389c5796459918031710bea412d2818bda471e
+2026-11-18T07:06:20.0723775Z   restore-keys: Linux-playwright-
+
+2026-11-18T07:06:20.0724064Z   enableCrossOsArchive: false
+2026-11-18T07:06:20.0724324Z   fail-on-cache-miss: false
+2026-11-18T07:06:20.0724563Z   lookup-only: false
+2026-11-18T07:06:20.0724786Z   save-always: false
+2026-11-18T07:06:20.0724997Z env:
+2026-11-18T07:06:20.0725195Z   PNPM_HOME: ~/.pnpm-store
+2026-11-18T07:06:20.0725441Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 213
+2026-11-18T07:06:20.0725729Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 780
+2026-11-18T07:06:20.0726108Z   GITHUB_REPO_NAME: BluebagAI/bench-etherpad-lite
+2026-11-18T07:06:20.0726407Z ##[endgroup]
+2026-11-18T07:06:20.3840932Z Cache hit for: Linux-playwright-31ef7bd5f30c4727b0e0bee005389c5796459918031710bea412d2818bda471e
+2026-11-18T07:06:20.9382494Z Received 306836227 of 306836227 (100.0%), 552.1 MBs/sec
+2026-11-18T07:06:20.9383683Z Cache Size: ~293 MB (306836227 B)
+2026-11-18T07:06:20.9406020Z [command]/usr/bin/tar -xf /home/runner/_work/_temp/45f18ede-b645-4b5a-a0a9-29d39bb4c587/cache.tzst -P -C /home/runner/_work/bench-etherpad-lite/bench-etherpad-lite --use-compress-program unzstd
+2026-11-18T07:06:21.5690163Z Cache restored successfully
+2026-11-18T07:06:21.7002547Z Cache restored from key: Linux-playwright-31ef7bd5f30c4727b0e0bee005389c5796459918031710bea412d2818bda471e
+2026-11-18T07:06:21.7149185Z ##[group]Run pnpm/action-setup@v6.1.1
+2026-11-18T07:06:21.7149506Z with:
+2026-11-18T07:06:21.7149720Z   run_install: false
+2026-11-18T07:06:21.7150118Z   dest: ~/setup-pnpm
+2026-11-18T07:06:21.7150351Z   cache: false
+2026-11-18T07:06:21.7150623Z   cache_dependency_path: pnpm-lock.yaml
+2026-11-18T07:06:21.7150933Z   package_json_file: package.json
+2026-11-18T07:06:21.7151202Z   standalone: false
+2026-11-18T07:06:21.7151437Z env:
+2026-11-18T07:06:21.7151656Z   PNPM_HOME: ~/.pnpm-store
+2026-11-18T07:06:21.7151921Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 213
+2026-11-18T07:06:21.7152224Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 780
+2026-11-18T07:06:21.7152552Z   GITHUB_REPO_NAME: BluebagAI/bench-etherpad-lite
+2026-11-18T07:06:21.7152875Z ##[endgroup]
+2026-11-18T07:06:21.8175563Z ##[group]Running self-installer...
+2026-11-18T07:06:22.8214412Z 
+2026-11-18T07:06:22.8214745Z added 2 packages, and audited 3 packages in 912ms
+2026-11-18T07:06:22.8217762Z 
+2026-11-18T07:06:22.8218072Z found 0 vulnerabilities
+2026-11-18T07:06:22.8436157Z Checking for updates...
+2026-11-18T07:06:23.3326161Z Switching pnpm from v12.17.0 to v12.4.2...
+2026-11-18T07:06:24.3665652Z Downloading @pnpm/exe.linux-x64@12.4.2: 0.00 B/21.06 MB
+2026-11-18T07:06:24.4219175Z Packages are copied from the content-addressable store to the virtual store.
+2026-11-18T07:06:24.4220019Z   Content-addressable store is at: /home/runner/setup-pnpm/node_modules/.bin/store/v11
+2026-11-18T07:06:24.4220752Z   Virtual store is at:             node_modules/.bin/global/v11/ecf-18e911e0eef1047b-0/node_modules/.pnpm
+2026-11-18T07:06:24.6446454Z .../global/v11/ecf-18e911e0eef1047b-0    | Progress: resolved 2, reused 0, downloaded 2, added 2, done
+2026-11-18T07:06:24.6819819Z Successfully updated pnpm to v12.4.2
+2026-11-18T07:06:24.6864366Z ##[endgroup]
+2026-11-18T07:06:24.6864954Z Installation Completed!
+2026-11-18T07:06:24.7008809Z ##[group]Run actions/setup-node@v7
+2026-11-18T07:06:24.7009090Z with:
+2026-11-18T07:06:24.7009293Z   node-version: 24
+2026-11-18T07:06:24.7009496Z   cache: pnpm
+2026-11-18T07:06:24.7009702Z   check-latest: false
+2026-11-18T07:06:24.7011956Z   token: ***
+2026-11-18T07:06:24.7012192Z   package-manager-cache: true
+2026-11-18T07:06:24.7012434Z env:
+2026-11-18T07:06:24.7012679Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-18T07:06:24.7013022Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 213
+2026-11-18T07:06:24.7013319Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 780
+2026-11-18T07:06:24.7013625Z   GITHUB_REPO_NAME: BluebagAI/bench-etherpad-lite
+2026-11-18T07:06:24.7013932Z ##[endgroup]
+2026-11-18T07:06:24.7815940Z Found in cache @ /opt/hostedtoolcache/node/24.22.1/x64
+2026-11-18T07:06:24.8179167Z ##[group]Environment details
+2026-11-18T07:06:25.0142547Z node: v24.22.1
+2026-11-18T07:06:25.0142774Z npm: 11.19.1
+2026-11-18T07:06:25.0142931Z yarn: 1.22.22
+2026-11-18T07:06:25.0143490Z ##[endgroup]
+2026-11-18T07:06:25.0155138Z [command]/home/runner/setup-pnpm/node_modules/.bin/bin/pnpm store path --silent
+2026-11-18T07:06:25.0242996Z /home/runner/setup-pnpm/node_modules/.bin/store/v11
+2026-11-18T07:06:25.2567147Z Cache hit for: node-cache-Linux-x64-pnpm-d6428897bbeaf16a3ec91521a8ce44c456af69cd4b95c6f95687df54612db556
+2026-11-18T07:06:25.6694986Z Received 154370913 of 154370913 (100.0%), 379.4 MBs/sec
+2026-11-18T07:06:25.6695391Z Cache Size: ~147 MB (154370913 B)
+2026-11-18T07:06:25.6734903Z [command]/usr/bin/tar -xf /home/runner/_work/_temp/929cfee0-f2e5-4fa9-a859-f050d3a8b9eb/cache.tzst -P -C /home/runner/_work/bench-etherpad-lite/bench-etherpad-lite --use-compress-program unzstd
+2026-11-18T07:06:26.6972634Z Cache restored successfully
+2026-11-18T07:06:26.7049410Z Cache restored from key: node-cache-Linux-x64-pnpm-d6428897bbeaf16a3ec91521a8ce44c456af69cd4b95c6f95687df54612db556
+2026-11-18T07:06:26.7151538Z ##[group]Run pnpm install --frozen-lockfile
+2026-11-18T07:06:26.7151950Z [36;1mpnpm install --frozen-lockfile[0m
+2026-11-18T07:06:26.7167104Z shell: /usr/bin/bash -e {0}
+2026-11-18T07:06:26.7167308Z env:
+2026-11-18T07:06:26.7167504Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-18T07:06:26.7167788Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 213
+2026-11-18T07:06:26.7167996Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 780
+2026-11-18T07:06:26.7168225Z   GITHUB_REPO_NAME: BluebagAI/bench-etherpad-lite
+2026-11-18T07:06:26.7168448Z ##[endgroup]
+2026-11-18T07:06:26.7315921Z Scope: all 7 workspace projects
+2026-11-18T07:06:26.7675772Z ? Verifying lockfile against supply-chain policies (1211 entries)...
+2026-11-18T07:06:26.8439904Z Packages are hard linked from the content-addressable store to the virtual store.
+2026-11-18T07:06:26.8450165Z   Content-addressable store is at: /home/runner/setup-pnpm/node_modules/.bin/store/v11
+2026-11-18T07:06:26.8450845Z   Virtual store is at:             node_modules/.pnpm
+2026-11-18T07:06:29.7960432Z ✓ Lockfile passes supply-chain policies (1211 entries in 3s)
+2026-11-18T07:06:29.7967146Z Lockfile is up to date, resolution step is skipped
+2026-11-18T07:06:29.8065560Z Packages: +1099
+2026-11-18T07:06:29.8065930Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-11-18T07:06:29.8291502Z Progress: resolved 1099, reused 1099, downloaded 0, added 1099, done
+2026-11-18T07:06:29.8371942Z Ignored build scripts: esbuild@0.28.2.
+2026-11-18T07:06:29.8372562Z Run "pnpm approve-builds" to pick which dependencies should be allowed to run scripts.
+2026-11-18T07:06:29.9562835Z 
+2026-11-18T07:06:29.9563480Z dependencies:
+2026-11-18T07:06:29.9563815Z + ep_etherpad-lite link:src
+2026-11-18T07:06:29.9564015Z 
+2026-11-18T07:06:29.9564152Z devDependencies:
+2026-11-18T07:06:29.9564412Z + admin link:admin
+2026-11-18T07:06:29.9564650Z + docs link:doc
+2026-11-18T07:06:29.9564874Z + ui link:ui
+2026-11-18T07:06:29.9564987Z 
+2026-11-18T07:06:29.9579204Z Done in 3.2s using pnpm v12.4.2
+2026-11-18T07:06:29.9741182Z ##[group]Run cp ./src/tests/settings.json settings.json
+2026-11-18T07:06:29.9741448Z [36;1mcp ./src/tests/settings.json settings.json[0m
+2026-11-18T07:06:29.9755339Z shell: /usr/bin/bash -e {0}
+2026-11-18T07:06:29.9755514Z env:
+2026-11-18T07:06:29.9755687Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-18T07:06:29.9764890Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 213
+2026-11-18T07:06:29.9765089Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 780
+2026-11-18T07:06:29.9765283Z   GITHUB_REPO_NAME: BluebagAI/bench-etherpad-lite
+2026-11-18T07:06:29.9765465Z ##[endgroup]
+2026-11-18T07:06:29.9843244Z ##[group]Run set -euo pipefail
+2026-11-18T07:06:29.9843457Z [36;1mset -euo pipefail[0m
+2026-11-18T07:06:29.9843642Z [36;1mpnpm run prod > /tmp/etherpad-server.log 2>&1 &[0m
+2026-11-18T07:06:29.9843925Z [36;1mcan_connect() { curl --max-time 3 -sSfo /dev/null http://localhost:9001/; }[0m
+2026-11-18T07:06:29.9844211Z [36;1mfor i in $(seq 1 90); do can_connect && break; sleep 1; done[0m
+2026-11-18T07:06:29.9844422Z [36;1mif ! can_connect; then[0m
+2026-11-18T07:06:29.9844622Z [36;1m  echo "::error::Etherpad did not respond on :9001 within 90s"[0m
+2026-11-18T07:06:29.9844851Z [36;1m  echo "----- server log -----"[0m
+2026-11-18T07:06:29.9845054Z [36;1m  tail -n 200 /tmp/etherpad-server.log || true[0m
+2026-11-18T07:06:29.9845244Z [36;1m  exit 1[0m
+2026-11-18T07:06:29.9845372Z [36;1mfi[0m
+2026-11-18T07:06:29.9845504Z [36;1mcd src[0m
+2026-11-18T07:06:29.9845678Z [36;1mpnpm exec playwright install firefox --with-deps[0m
+2026-11-18T07:06:29.9854931Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-18T07:06:29.9855146Z env:
+2026-11-18T07:06:29.9855317Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-18T07:06:29.9855531Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 213
+2026-11-18T07:06:29.9855710Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 780
+2026-11-18T07:06:29.9855903Z   GITHUB_REPO_NAME: BluebagAI/bench-etherpad-lite
+2026-11-18T07:06:29.9856089Z ##[endgroup]
+2026-11-18T07:06:29.9945962Z curl: (7) Failed to connect to localhost port 9001 after 0 ms: Couldn't connect to server
+2026-11-18T07:06:31.0038424Z curl: (7) Failed to connect to localhost port 9001 after 0 ms: Couldn't connect to server
+2026-11-18T07:06:32.0078791Z curl: (7) Failed to connect to localhost port 9001 after 0 ms: Couldn't connect to server
+2026-11-18T07:06:33.3167526Z Installing dependencies...
+2026-11-18T07:06:33.3215767Z Switching to root user to install dependencies...
+2026-11-18T07:06:33.3893387Z Get:1 file:/etc/apt/blacksmith-ubuntu-mirrors.txt Mirrorlist [194 B]
+2026-11-18T07:06:33.4757607Z Get:6 https://dl.google.com/linux/chrome-stable/deb stable InRelease [2548 B]
+2026-11-18T07:06:33.5014413Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-11-18T07:06:33.5101393Z Hit:7 https://packages.microsoft.com/repos/azure-cli noble InRelease
+2026-11-18T07:06:33.5298659Z Get:8 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+2026-11-18T07:06:33.5465780Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2026-11-18T07:06:33.5785837Z Get:9 https://dl.google.com/linux/chrome-stable/deb stable/main amd64 Packages [1408 B]
+2026-11-18T07:06:33.6055908Z Get:10 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [794 kB]
+2026-11-18T07:06:33.7007128Z Get:11 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [723 kB]
+2026-11-18T07:06:33.7260803Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+2026-11-18T07:06:33.7715256Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2026-11-18T07:06:33.8180813Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1455 kB]
+2026-11-18T07:06:33.9591172Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [317 kB]
+2026-11-18T07:06:34.0005993Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [181 kB]
+2026-11-18T07:06:34.0463318Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1715 kB]
+2026-11-18T07:06:34.1015753Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [345 kB]
+2026-11-18T07:06:34.1475742Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [388 kB]
+2026-11-18T07:06:34.1956181Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1887 kB]
+2026-11-18T07:06:34.2460709Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [433 kB]
+2026-11-18T07:06:34.2924337Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+2026-11-18T07:06:34.3399065Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [5740 B]
+2026-11-18T07:06:34.4737374Z Get:22 http://azure.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [12.6 kB]
+2026-11-18T07:06:34.5194023Z Get:23 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1196 kB]
+2026-11-18T07:06:34.5754326Z Get:24 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Components [46.4 kB]
+2026-11-18T07:06:34.6203770Z Get:25 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1229 kB]
+2026-11-18T07:06:34.6692947Z Get:26 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Components [76.3 kB]
+2026-11-18T07:06:37.6459141Z Fetched 11.2 MB in 1s (8452 kB/s)
+2026-11-18T07:06:38.3715528Z Reading package lists...
+2026-11-18T07:06:38.3984164Z Reading package lists...
+2026-11-18T07:06:38.5988248Z Building dependency tree...
+2026-11-18T07:06:38.5992427Z Reading state information...
+2026-11-18T07:06:38.7305250Z libasound2t64 is already the newest version (1.2.11-1ubuntu0.3).
+2026-11-18T07:06:38.7305758Z libasound2t64 set to manually installed.
+2026-11-18T07:06:38.7307562Z libatk1.0-0t64 is already the newest version (2.52.0-1build1).
+2026-11-18T07:06:38.7307901Z libatk1.0-0t64 set to manually installed.
+2026-11-18T07:06:38.7308241Z libcairo-gobject2 is already the newest version (1.18.0-3build1).
+2026-11-18T07:06:38.7308569Z libcairo-gobject2 set to manually installed.
+2026-11-18T07:06:38.7308865Z libcairo2 is already the newest version (1.18.0-3build1).
+2026-11-18T07:06:38.7309123Z libcairo2 set to manually installed.
+2026-11-18T07:06:38.7309416Z libdbus-1-3 is already the newest version (1.14.10-4ubuntu4.1).
+2026-11-18T07:06:38.7309809Z libdbus-1-3 set to manually installed.
+2026-11-18T07:06:38.7310226Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+2026-11-18T07:06:38.7310496Z libfontconfig1 set to manually installed.
+2026-11-18T07:06:38.7310794Z libgdk-pixbuf-2.0-0 is already the newest version (2.42.10+dfsg-3ubuntu3.3).
+2026-11-18T07:06:38.7311099Z libgdk-pixbuf-2.0-0 set to manually installed.
+2026-11-18T07:06:38.7311380Z libgtk-3-0t64 is already the newest version (3.24.41-4ubuntu1.3).
+2026-11-18T07:06:38.7311634Z libgtk-3-0t64 set to manually installed.
+2026-11-18T07:06:38.7311896Z libpango-1.0-0 is already the newest version (1.52.1+ds-1build1).
+2026-11-18T07:06:38.7312143Z libpango-1.0-0 set to manually installed.
+2026-11-18T07:06:38.7312420Z libpangocairo-1.0-0 is already the newest version (1.52.1+ds-1build1).
+2026-11-18T07:06:38.7312698Z libpangocairo-1.0-0 set to manually installed.
+2026-11-18T07:06:38.7312958Z libxcb-shm0 is already the newest version (1.15-1ubuntu2).
+2026-11-18T07:06:38.7313200Z libxcb-shm0 set to manually installed.
+2026-11-18T07:06:38.7313440Z libxcb1 is already the newest version (1.15-1ubuntu2).
+2026-11-18T07:06:38.7313673Z libxcb1 set to manually installed.
+2026-11-18T07:06:38.7313936Z libxcomposite1 is already the newest version (1:0.4.5-1build3).
+2026-11-18T07:06:38.7314194Z libxcomposite1 set to manually installed.
+2026-11-18T07:06:38.7314452Z libxcursor1 is already the newest version (1:1.2.1-1build1).
+2026-11-18T07:06:38.7314700Z libxcursor1 set to manually installed.
+2026-11-18T07:06:38.7314957Z libxdamage1 is already the newest version (1:1.1.6-1build1).
+2026-11-18T07:06:38.7315202Z libxdamage1 set to manually installed.
+2026-11-18T07:06:38.7315446Z libxext6 is already the newest version (2:1.3.4-1build2).
+2026-11-18T07:06:38.7315677Z libxext6 set to manually installed.
+2026-11-18T07:06:38.7315975Z libxfixes3 is already the newest version (1:6.0.0-2build1).
+2026-11-18T07:06:38.7316230Z libxfixes3 set to manually installed.
+2026-11-18T07:06:38.7316858Z libxi6 is already the newest version (2:1.8.1-1build1).
+2026-11-18T07:06:38.7317115Z libxi6 set to manually installed.
+2026-11-18T07:06:38.7317374Z libxrandr2 is already the newest version (2:1.5.2-2build1).
+2026-11-18T07:06:38.7317619Z libxrandr2 set to manually installed.
+2026-11-18T07:06:38.7317880Z libxrender1 is already the newest version (1:0.9.10-1.1build1).
+2026-11-18T07:06:38.7318132Z libxrender1 set to manually installed.
+2026-11-18T07:06:38.7318431Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+2026-11-18T07:06:38.7318764Z fonts-liberation is already the newest version (1:2.1.5-3).
+2026-11-18T07:06:38.7319020Z fonts-liberation set to manually installed.
+2026-11-18T07:06:38.7319275Z The following additional packages will be installed:
+2026-11-18T07:06:38.7319561Z   gir1.2-glib-2.0 libavutil58 libcodec2-1.2 libdav1d7 libglib2.0-bin
+2026-11-18T07:06:38.7319882Z   libglib2.0-data libgsm1 libhwy1t64 libjxl0.7 libmp3lame0 libopus0 librav1e0
+2026-11-18T07:06:38.7320212Z   libshine3 libsoxr0 libspeex1 libsvtav1enc1d1 libswresample4 libtheora0
+2026-11-18T07:06:38.7320543Z   libtwolame0 libva-drm2 libva-x11-2 libva2 libvdpau1 libvorbisenc2 libvpl2
+2026-11-18T07:06:38.7320861Z   libvpx9 libx11-data libx264-164 libx265-199 libxvidcore4 libzvbi-common
+2026-11-18T07:06:38.7321194Z   libzvbi0t64 ocl-icd-libopencl1 xfonts-encodings xfonts-utils xserver-common
+2026-11-18T07:06:38.7323631Z Suggested packages:
+2026-11-18T07:06:38.7325486Z   libcuda1 libnvcuvid1 libnvidia-encode1 low-memory-monitor opus-tools speex
+2026-11-18T07:06:38.7325777Z   opencl-icd
+2026-11-18T07:06:38.7326012Z Recommended packages:
+2026-11-18T07:06:38.7326258Z   fonts-ipafont-mincho fonts-tlwg-loma va-driver-all | va-driver
+2026-11-18T07:06:38.7326537Z   vdpau-driver-all | vdpau-driver xfonts-base
+2026-11-18T07:06:38.7498924Z The following NEW packages will be installed:
+2026-11-18T07:06:38.7499509Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+2026-11-18T07:06:38.7500092Z   fonts-wqy-zenhei libavcodec60 libavutil58 libcodec2-1.2 libdav1d7 libgsm1
+2026-11-18T07:06:38.7500567Z   libhwy1t64 libjxl0.7 libmp3lame0 libopus0 librav1e0 libshine3 libsoxr0
+2026-11-18T07:06:38.7500888Z   libspeex1 libsvtav1enc1d1 libswresample4 libtheora0 libtwolame0 libva-drm2
+2026-11-18T07:06:38.7501192Z   libva-x11-2 libva2 libvdpau1 libvorbisenc2 libvpl2 libvpx9 libx264-164
+2026-11-18T07:06:38.7502961Z   libx265-199 libxvidcore4 libzvbi-common libzvbi0t64 ocl-icd-libopencl1
+2026-11-18T07:06:38.7503264Z   xfonts-cyrillic xfonts-encodings xfonts-scalable xfonts-utils
+2026-11-18T07:06:38.7505765Z The following packages will be upgraded:
+2026-11-18T07:06:38.7508170Z   gir1.2-glib-2.0 libfreetype6 libglib2.0-0t64 libglib2.0-bin libglib2.0-data
+2026-11-18T07:06:38.7509430Z   libx11-6 libx11-data libx11-xcb1 xserver-common xvfb
+2026-11-18T07:06:38.7625893Z 10 upgraded, 39 newly installed, 0 to remove and 267 not upgraded.
+2026-11-18T07:06:38.7626538Z Need to get 50.6 MB of archives.
+2026-11-18T07:06:38.7626803Z After this operation, 161 MB of additional disk space will be used.
+2026-11-18T07:06:38.7627135Z Get:1 file:/etc/apt/blacksmith-ubuntu-mirrors.txt Mirrorlist [194 B]
+2026-11-18T07:06:38.8752613Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-ipafont-gothic all 00303-21ubuntu1 [3513 kB]
+2026-11-18T07:06:39.2626516Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglib2.0-data all 2.80.0-6ubuntu3.10 [50.2 kB]
+2026-11-18T07:06:39.3262262Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglib2.0-bin amd64 2.80.0-6ubuntu3.10 [97.9 kB]
+2026-11-18T07:06:39.3906417Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 gir1.2-glib-2.0 amd64 2.80.0-6ubuntu3.10 [183 kB]
+2026-11-18T07:06:39.4550999Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglib2.0-0t64 amd64 2.80.0-6ubuntu3.10 [1548 kB]
+2026-11-18T07:06:39.6899445Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libx11-6 amd64 2:1.8.7-1ubuntu0.1 [653 kB]
+2026-11-18T07:06:39.7556786Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libx11-xcb1 amd64 2:1.8.7-1ubuntu0.1 [7796 B]
+2026-11-18T07:06:39.8194607Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libx11-data all 2:1.8.7-1ubuntu0.1 [116 kB]
+2026-11-18T07:06:39.8822973Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-freefont-ttf all 20211204+svn4273-2 [5641 kB]
+2026-11-18T07:06:40.0040802Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-tlwg-loma-otf all 1:0.7.3-1 [107 kB]
+2026-11-18T07:06:40.0686366Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-unifont all 1:15.1.01-1build1 [2993 kB]
+2026-11-18T07:06:40.1543326Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-wqy-zenhei all 0.9.45-8 [7472 kB]
+2026-11-18T07:06:40.3069547Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 libva2 amd64 2.20.0-2ubuntu0.2 [66.4 kB]
+2026-11-18T07:06:40.3705629Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 libva-drm2 amd64 2.20.0-2ubuntu0.2 [7124 B]
+2026-11-18T07:06:40.4440861Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 libva-x11-2 amd64 2.20.0-2ubuntu0.2 [12.0 kB]
+2026-11-18T07:06:40.5071586Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libvdpau1 amd64 1.5-2build1 [27.8 kB]
+2026-11-18T07:06:40.5755222Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libvpl2 amd64 2023.3.0-1build1 [99.8 kB]
+2026-11-18T07:06:40.6908695Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 ocl-icd-libopencl1 amd64 2.3.2-1build1 [38.5 kB]
+2026-11-18T07:06:40.7979188Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libavutil58 amd64 7:6.1.1-3ubuntu5 [401 kB]
+2026-11-18T07:06:40.9488660Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libcodec2-1.2 amd64 1.2.0-2build1 [8998 kB]
+2026-11-18T07:06:41.1679998Z Get:22 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libdav1d7 amd64 1.4.1-1build1 [604 kB]
+2026-11-18T07:06:41.2653422Z Get:23 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libgsm1 amd64 1.0.22-1build1 [27.8 kB]
+2026-11-18T07:06:41.3280425Z Get:24 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libhwy1t64 amd64 1.0.7-8.1build1 [584 kB]
+2026-11-18T07:06:41.3937589Z Get:25 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 libjxl0.7 amd64 0.7.0-10.2ubuntu6.1 [1001 kB]
+2026-11-18T07:06:41.5050934Z Get:26 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libmp3lame0 amd64 3.100-6build1 [142 kB]
+2026-11-18T07:06:41.5735235Z Get:27 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libopus0 amd64 1.4-1build1 [208 kB]
+2026-11-18T07:06:41.6363050Z Get:28 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 librav1e0 amd64 0.7.1-2 [1022 kB]
+2026-11-18T07:06:41.7037586Z Get:29 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libshine3 amd64 3.1.1-2build1 [23.2 kB]
+2026-11-18T07:06:41.7666463Z Get:30 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libspeex1 amd64 1.2.1-2ubuntu2.24.04.1 [59.6 kB]
+2026-11-18T07:06:41.8311447Z Get:31 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libsvtav1enc1d1 amd64 1.7.0+dfsg-2build1 [2425 kB]
+2026-11-18T07:06:41.9066969Z Get:32 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libsoxr0 amd64 0.1.3-4build3 [80.0 kB]
+2026-11-18T07:06:41.9717010Z Get:33 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libswresample4 amd64 7:6.1.1-3ubuntu5 [63.8 kB]
+2026-11-18T07:06:42.0366362Z Get:34 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libtheora0 amd64 1.1.1+dfsg.1-16.1build3 [211 kB]
+2026-11-18T07:06:42.2028414Z Get:35 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libtwolame0 amd64 0.4.0-2build3 [52.3 kB]
+2026-11-18T07:06:42.2656142Z Get:36 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libvorbisenc2 amd64 1.3.7-1build3 [80.8 kB]
+2026-11-18T07:06:42.3293699Z Get:37 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libvpx9 amd64 1.14.0-1ubuntu2.3 [1143 kB]
+2026-11-18T07:06:42.4350586Z Get:38 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libx264-164 amd64 2:0.164.3108+git31e19f9-1 [604 kB]
+2026-11-18T07:06:42.5885111Z Get:39 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libx265-199 amd64 3.5-2build1 [1226 kB]
+2026-11-18T07:06:42.6608041Z Get:40 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libxvidcore4 amd64 2:1.3.7-1build1 [219 kB]
+2026-11-18T07:06:42.7250624Z Get:41 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libzvbi-common all 0.2.42-2 [42.4 kB]
+2026-11-18T07:06:42.7880205Z Get:42 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libzvbi0t64 amd64 0.2.42-2 [261 kB]
+2026-11-18T07:06:42.8526767Z Get:43 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libavcodec60 amd64 7:6.1.1-3ubuntu5 [5851 kB]
+2026-11-18T07:06:42.9737462Z Get:44 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libfreetype6 amd64 2.13.2+dfsg-1ubuntu0.2 [403 kB]
+2026-11-18T07:06:43.0380244Z Get:45 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-encodings all 1:1.0.5-0ubuntu2 [578 kB]
+2026-11-18T07:06:43.1031979Z Get:46 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-utils amd64 1:7.7+6build3 [94.4 kB]
+2026-11-18T07:06:43.1660889Z Get:47 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 xfonts-cyrillic all 1:1.0.5+nmu1 [384 kB]
+2026-11-18T07:06:43.2308269Z Get:48 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-scalable all 1:1.0.3-1.3 [304 kB]
+2026-11-18T07:06:43.2947423Z Get:49 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 xserver-common all 2:21.1.12-1ubuntu1.9 [35.0 kB]
+2026-11-18T07:06:43.3576829Z Get:50 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 xvfb amd64 2:21.1.12-1ubuntu1.9 [877 kB]
+2026-11-18T07:06:43.5899126Z Fetched 50.6 MB in 5s (11.0 MB/s)
+2026-11-18T07:06:43.6052923Z Selecting previously unselected package fonts-ipafont-gothic.
+2026-11-18T07:06:43.6146517Z (Reading database ... 
+2026-11-18T07:06:43.6146858Z (Reading database ... 5%
+2026-11-18T07:06:43.6147143Z (Reading database ... 10%
+2026-11-18T07:06:43.6147428Z (Reading database ... 15%
+2026-11-18T07:06:43.6147700Z (Reading database ... 20%
+2026-11-18T07:06:43.6147965Z (Reading database ... 25%
+2026-11-18T07:06:43.6148250Z (Reading database ... 30%
+2026-11-18T07:06:43.6148540Z (Reading database ... 35%
+2026-11-18T07:06:43.6148828Z (Reading database ... 40%
+2026-11-18T07:06:43.6149152Z (Reading database ... 45%
+2026-11-18T07:06:43.6149464Z (Reading database ... 50%
+2026-11-18T07:06:43.6239461Z (Reading database ... 55%
+2026-11-18T07:06:43.6336191Z (Reading database ... 60%
+2026-11-18T07:06:43.6465496Z (Reading database ... 65%
+2026-11-18T07:06:43.6552165Z (Reading database ... 70%
+2026-11-18T07:06:43.6867590Z (Reading database ... 75%
+2026-11-18T07:06:43.6956423Z (Reading database ... 80%
+2026-11-18T07:06:43.7047843Z (Reading database ... 85%
+2026-11-18T07:06:43.7241612Z (Reading database ... 90%
+2026-11-18T07:06:43.7404900Z (Reading database ... 95%
+2026-11-18T07:06:43.7405182Z (Reading database ... 100%
+2026-11-18T07:06:43.7405467Z (Reading database ... 207973 files and directories currently installed.)
+2026-11-18T07:06:43.7440542Z Preparing to unpack .../00-fonts-ipafont-gothic_00303-21ubuntu1_all.deb ...
+2026-11-18T07:06:43.7492475Z Unpacking fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-11-18T07:06:43.9140642Z Preparing to unpack .../01-libglib2.0-data_2.80.0-6ubuntu3.10_all.deb ...
+2026-11-18T07:06:43.9149806Z Unpacking libglib2.0-data (2.80.0-6ubuntu3.10) over (2.80.0-6ubuntu3.8) ...
+2026-11-18T07:06:43.9320685Z Preparing to unpack .../02-libglib2.0-bin_2.80.0-6ubuntu3.10_amd64.deb ...
+2026-11-18T07:06:43.9326941Z Unpacking libglib2.0-bin (2.80.0-6ubuntu3.10) over (2.80.0-6ubuntu3.8) ...
+2026-11-18T07:06:43.9549390Z Preparing to unpack .../03-gir1.2-glib-2.0_2.80.0-6ubuntu3.10_amd64.deb ...
+2026-11-18T07:06:43.9557585Z Unpacking gir1.2-glib-2.0:amd64 (2.80.0-6ubuntu3.10) over (2.80.0-6ubuntu3.8) ...
+2026-11-18T07:06:43.9766304Z Preparing to unpack .../04-libglib2.0-0t64_2.80.0-6ubuntu3.10_amd64.deb ...
+2026-11-18T07:06:43.9798249Z Unpacking libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.10) over (2.80.0-6ubuntu3.8) ...
+2026-11-18T07:06:44.0126209Z Preparing to unpack .../05-libx11-6_2%3a1.8.7-1ubuntu0.1_amd64.deb ...
+2026-11-18T07:06:44.0135800Z Unpacking libx11-6:amd64 (2:1.8.7-1ubuntu0.1) over (2:1.8.7-1build1) ...
+2026-11-18T07:06:44.0407675Z Preparing to unpack .../06-libx11-xcb1_2%3a1.8.7-1ubuntu0.1_amd64.deb ...
+2026-11-18T07:06:44.0416050Z Unpacking libx11-xcb1:amd64 (2:1.8.7-1ubuntu0.1) over (2:1.8.7-1build1) ...
+2026-11-18T07:06:44.0587543Z Preparing to unpack .../07-libx11-data_2%3a1.8.7-1ubuntu0.1_all.deb ...
+2026-11-18T07:06:44.0593856Z Unpacking libx11-data (2:1.8.7-1ubuntu0.1) over (2:1.8.7-1build1) ...
+2026-11-18T07:06:44.1114910Z Selecting previously unselected package fonts-freefont-ttf.
+2026-11-18T07:06:44.1234603Z Preparing to unpack .../08-fonts-freefont-ttf_20211204+svn4273-2_all.deb ...
+2026-11-18T07:06:44.1244607Z Unpacking fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-11-18T07:06:44.1913117Z Selecting previously unselected package fonts-tlwg-loma-otf.
+2026-11-18T07:06:44.2047908Z Preparing to unpack .../09-fonts-tlwg-loma-otf_1%3a0.7.3-1_all.deb ...
+2026-11-18T07:06:44.2055452Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-11-18T07:06:44.2190232Z Selecting previously unselected package fonts-unifont.
+2026-11-18T07:06:44.2321950Z Preparing to unpack .../10-fonts-unifont_1%3a15.1.01-1build1_all.deb ...
+2026-11-18T07:06:44.2327853Z Unpacking fonts-unifont (1:15.1.01-1build1) ...
+2026-11-18T07:06:44.3248593Z Selecting previously unselected package fonts-wqy-zenhei.
+2026-11-18T07:06:44.3329413Z Preparing to unpack .../11-fonts-wqy-zenhei_0.9.45-8_all.deb ...
+2026-11-18T07:06:44.3395122Z Unpacking fonts-wqy-zenhei (0.9.45-8) ...
+2026-11-18T07:06:44.6666449Z Selecting previously unselected package libva2:amd64.
+2026-11-18T07:06:44.6746810Z Preparing to unpack .../12-libva2_2.20.0-2ubuntu0.2_amd64.deb ...
+2026-11-18T07:06:44.6751653Z Unpacking libva2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-18T07:06:44.6875907Z Selecting previously unselected package libva-drm2:amd64.
+2026-11-18T07:06:44.6977991Z Preparing to unpack .../13-libva-drm2_2.20.0-2ubuntu0.2_amd64.deb ...
+2026-11-18T07:06:44.6980841Z Unpacking libva-drm2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-18T07:06:44.7077675Z Selecting previously unselected package libva-x11-2:amd64.
+2026-11-18T07:06:44.7150507Z Preparing to unpack .../14-libva-x11-2_2.20.0-2ubuntu0.2_amd64.deb ...
+2026-11-18T07:06:44.7154007Z Unpacking libva-x11-2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-18T07:06:44.7256976Z Selecting previously unselected package libvdpau1:amd64.
+2026-11-18T07:06:44.7332501Z Preparing to unpack .../15-libvdpau1_1.5-2build1_amd64.deb ...
+2026-11-18T07:06:44.7336859Z Unpacking libvdpau1:amd64 (1.5-2build1) ...
+2026-11-18T07:06:44.7448252Z Selecting previously unselected package libvpl2.
+2026-11-18T07:06:44.7525464Z Preparing to unpack .../16-libvpl2_2023.3.0-1build1_amd64.deb ...
+2026-11-18T07:06:44.7528444Z Unpacking libvpl2 (2023.3.0-1build1) ...
+2026-11-18T07:06:44.7667294Z Selecting previously unselected package ocl-icd-libopencl1:amd64.
+2026-11-18T07:06:44.7770824Z Preparing to unpack .../17-ocl-icd-libopencl1_2.3.2-1build1_amd64.deb ...
+2026-11-18T07:06:44.7774134Z Unpacking ocl-icd-libopencl1:amd64 (2.3.2-1build1) ...
+2026-11-18T07:06:44.7963800Z Selecting previously unselected package libavutil58:amd64.
+2026-11-18T07:06:44.8052428Z Preparing to unpack .../18-libavutil58_7%3a6.1.1-3ubuntu5_amd64.deb ...
+2026-11-18T07:06:44.8060990Z Unpacking libavutil58:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-18T07:06:44.8210911Z Selecting previously unselected package libcodec2-1.2:amd64.
+2026-11-18T07:06:44.8287144Z Preparing to unpack .../19-libcodec2-1.2_1.2.0-2build1_amd64.deb ...
+2026-11-18T07:06:44.8291283Z Unpacking libcodec2-1.2:amd64 (1.2.0-2build1) ...
+2026-11-18T07:06:44.8779250Z Selecting previously unselected package libdav1d7:amd64.
+2026-11-18T07:06:44.8855064Z Preparing to unpack .../20-libdav1d7_1.4.1-1build1_amd64.deb ...
+2026-11-18T07:06:44.8859208Z Unpacking libdav1d7:amd64 (1.4.1-1build1) ...
+2026-11-18T07:06:44.9011140Z Selecting previously unselected package libgsm1:amd64.
+2026-11-18T07:06:44.9085620Z Preparing to unpack .../21-libgsm1_1.0.22-1build1_amd64.deb ...
+2026-11-18T07:06:44.9088816Z Unpacking libgsm1:amd64 (1.0.22-1build1) ...
+2026-11-18T07:06:44.9179417Z Selecting previously unselected package libhwy1t64:amd64.
+2026-11-18T07:06:44.9254346Z Preparing to unpack .../22-libhwy1t64_1.0.7-8.1build1_amd64.deb ...
+2026-11-18T07:06:44.9257028Z Unpacking libhwy1t64:amd64 (1.0.7-8.1build1) ...
+2026-11-18T07:06:44.9446159Z Selecting previously unselected package libjxl0.7:amd64.
+2026-11-18T07:06:44.9523230Z Preparing to unpack .../23-libjxl0.7_0.7.0-10.2ubuntu6.1_amd64.deb ...
+2026-11-18T07:06:44.9527684Z Unpacking libjxl0.7:amd64 (0.7.0-10.2ubuntu6.1) ...
+2026-11-18T07:06:44.9737220Z Selecting previously unselected package libmp3lame0:amd64.
+2026-11-18T07:06:44.9814291Z Preparing to unpack .../24-libmp3lame0_3.100-6build1_amd64.deb ...
+2026-11-18T07:06:44.9818044Z Unpacking libmp3lame0:amd64 (3.100-6build1) ...
+2026-11-18T07:06:44.9935653Z Selecting previously unselected package libopus0:amd64.
+2026-11-18T07:06:45.0020844Z Preparing to unpack .../25-libopus0_1.4-1build1_amd64.deb ...
+2026-11-18T07:06:45.0025010Z Unpacking libopus0:amd64 (1.4-1build1) ...
+2026-11-18T07:06:45.0147619Z Selecting previously unselected package librav1e0:amd64.
+2026-11-18T07:06:45.0224738Z Preparing to unpack .../26-librav1e0_0.7.1-2_amd64.deb ...
+2026-11-18T07:06:45.0228391Z Unpacking librav1e0:amd64 (0.7.1-2) ...
+2026-11-18T07:06:45.0445130Z Selecting previously unselected package libshine3:amd64.
+2026-11-18T07:06:45.0523161Z Preparing to unpack .../27-libshine3_3.1.1-2build1_amd64.deb ...
+2026-11-18T07:06:45.0526301Z Unpacking libshine3:amd64 (3.1.1-2build1) ...
+2026-11-18T07:06:45.0621353Z Selecting previously unselected package libspeex1:amd64.
+2026-11-18T07:06:45.0696893Z Preparing to unpack .../28-libspeex1_1.2.1-2ubuntu2.24.04.1_amd64.deb ...
+2026-11-18T07:06:45.0699911Z Unpacking libspeex1:amd64 (1.2.1-2ubuntu2.24.04.1) ...
+2026-11-18T07:06:45.0806153Z Selecting previously unselected package libsvtav1enc1d1:amd64.
+2026-11-18T07:06:45.0884339Z Preparing to unpack .../29-libsvtav1enc1d1_1.7.0+dfsg-2build1_amd64.deb ...
+2026-11-18T07:06:45.0890727Z Unpacking libsvtav1enc1d1:amd64 (1.7.0+dfsg-2build1) ...
+2026-11-18T07:06:45.1227340Z Selecting previously unselected package libsoxr0:amd64.
+2026-11-18T07:06:45.1340238Z Preparing to unpack .../30-libsoxr0_0.1.3-4build3_amd64.deb ...
+2026-11-18T07:06:45.1348393Z Unpacking libsoxr0:amd64 (0.1.3-4build3) ...
+2026-11-18T07:06:45.1473797Z Selecting previously unselected package libswresample4:amd64.
+2026-11-18T07:06:45.1548690Z Preparing to unpack .../31-libswresample4_7%3a6.1.1-3ubuntu5_amd64.deb ...
+2026-11-18T07:06:45.1552416Z Unpacking libswresample4:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-18T07:06:45.1665861Z Selecting previously unselected package libtheora0:amd64.
+2026-11-18T07:06:45.1741843Z Preparing to unpack .../32-libtheora0_1.1.1+dfsg.1-16.1build3_amd64.deb ...
+2026-11-18T07:06:45.1744696Z Unpacking libtheora0:amd64 (1.1.1+dfsg.1-16.1build3) ...
+2026-11-18T07:06:45.1882652Z Selecting previously unselected package libtwolame0:amd64.
+2026-11-18T07:06:45.2018337Z Preparing to unpack .../33-libtwolame0_0.4.0-2build3_amd64.deb ...
+2026-11-18T07:06:45.2023990Z Unpacking libtwolame0:amd64 (0.4.0-2build3) ...
+2026-11-18T07:06:45.2151473Z Selecting previously unselected package libvorbisenc2:amd64.
+2026-11-18T07:06:45.2287562Z Preparing to unpack .../34-libvorbisenc2_1.3.7-1build3_amd64.deb ...
+2026-11-18T07:06:45.2293346Z Unpacking libvorbisenc2:amd64 (1.3.7-1build3) ...
+2026-11-18T07:06:45.2435807Z Selecting previously unselected package libvpx9:amd64.
+2026-11-18T07:06:45.2570226Z Preparing to unpack .../35-libvpx9_1.14.0-1ubuntu2.3_amd64.deb ...
+2026-11-18T07:06:45.2575470Z Unpacking libvpx9:amd64 (1.14.0-1ubuntu2.3) ...
+2026-11-18T07:06:45.2838412Z Selecting previously unselected package libx264-164:amd64.
+2026-11-18T07:06:45.2978013Z Preparing to unpack .../36-libx264-164_2%3a0.164.3108+git31e19f9-1_amd64.deb ...
+2026-11-18T07:06:45.2989515Z Unpacking libx264-164:amd64 (2:0.164.3108+git31e19f9-1) ...
+2026-11-18T07:06:45.3181711Z Selecting previously unselected package libx265-199:amd64.
+2026-11-18T07:06:45.3259627Z Preparing to unpack .../37-libx265-199_3.5-2build1_amd64.deb ...
+2026-11-18T07:06:45.3266830Z Unpacking libx265-199:amd64 (3.5-2build1) ...
+2026-11-18T07:06:45.3763856Z Selecting previously unselected package libxvidcore4:amd64.
+2026-11-18T07:06:45.3840702Z Preparing to unpack .../38-libxvidcore4_2%3a1.3.7-1build1_amd64.deb ...
+2026-11-18T07:06:45.3845366Z Unpacking libxvidcore4:amd64 (2:1.3.7-1build1) ...
+2026-11-18T07:06:45.3965880Z Selecting previously unselected package libzvbi-common.
+2026-11-18T07:06:45.4038662Z Preparing to unpack .../39-libzvbi-common_0.2.42-2_all.deb ...
+2026-11-18T07:06:45.4043080Z Unpacking libzvbi-common (0.2.42-2) ...
+2026-11-18T07:06:45.4200478Z Selecting previously unselected package libzvbi0t64:amd64.
+2026-11-18T07:06:45.4277017Z Preparing to unpack .../40-libzvbi0t64_0.2.42-2_amd64.deb ...
+2026-11-18T07:06:45.4280956Z Unpacking libzvbi0t64:amd64 (0.2.42-2) ...
+2026-11-18T07:06:45.4413464Z Selecting previously unselected package libavcodec60:amd64.
+2026-11-18T07:06:45.4491075Z Preparing to unpack .../41-libavcodec60_7%3a6.1.1-3ubuntu5_amd64.deb ...
+2026-11-18T07:06:45.4496002Z Unpacking libavcodec60:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-18T07:06:45.5345057Z Preparing to unpack .../42-libfreetype6_2.13.2+dfsg-1ubuntu0.2_amd64.deb ...
+2026-11-18T07:06:45.5366165Z Unpacking libfreetype6:amd64 (2.13.2+dfsg-1ubuntu0.2) over (2.13.2+dfsg-1ubuntu0.1) ...
+2026-11-18T07:06:45.5541254Z Selecting previously unselected package xfonts-encodings.
+2026-11-18T07:06:45.5625201Z Preparing to unpack .../43-xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
+2026-11-18T07:06:45.5630656Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-11-18T07:06:45.5760610Z Selecting previously unselected package xfonts-utils.
+2026-11-18T07:06:45.5844144Z Preparing to unpack .../44-xfonts-utils_1%3a7.7+6build3_amd64.deb ...
+2026-11-18T07:06:45.5849695Z Unpacking xfonts-utils (1:7.7+6build3) ...
+2026-11-18T07:06:45.6387640Z Selecting previously unselected package xfonts-cyrillic.
+2026-11-18T07:06:45.6519341Z Preparing to unpack .../45-xfonts-cyrillic_1%3a1.0.5+nmu1_all.deb ...
+2026-11-18T07:06:45.6539740Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-11-18T07:06:45.6738338Z Selecting previously unselected package xfonts-scalable.
+2026-11-18T07:06:45.6877160Z Preparing to unpack .../46-xfonts-scalable_1%3a1.0.3-1.3_all.deb ...
+2026-11-18T07:06:45.6883830Z Unpacking xfonts-scalable (1:1.0.3-1.3) ...
+2026-11-18T07:06:45.7126738Z Preparing to unpack .../47-xserver-common_2%3a21.1.12-1ubuntu1.9_all.deb ...
+2026-11-18T07:06:45.7134851Z Unpacking xserver-common (2:21.1.12-1ubuntu1.9) over (2:21.1.12-1ubuntu1.6) ...
+2026-11-18T07:06:45.7317290Z Preparing to unpack .../48-xvfb_2%3a21.1.12-1ubuntu1.9_amd64.deb ...
+2026-11-18T07:06:45.7325995Z Unpacking xvfb (2:21.1.12-1ubuntu1.9) over (2:21.1.12-1ubuntu1.6) ...
+2026-11-18T07:06:45.7617952Z Setting up libhwy1t64:amd64 (1.0.7-8.1build1) ...
+2026-11-18T07:06:45.7626264Z Setting up libspeex1:amd64 (1.2.1-2ubuntu2.24.04.1) ...
+2026-11-18T07:06:45.7634086Z Setting up libshine3:amd64 (3.1.1-2build1) ...
+2026-11-18T07:06:45.7641913Z Setting up libvpl2 (2023.3.0-1build1) ...
+2026-11-18T07:06:45.7650127Z Setting up libx264-164:amd64 (2:0.164.3108+git31e19f9-1) ...
+2026-11-18T07:06:45.7656237Z Setting up libtwolame0:amd64 (0.4.0-2build3) ...
+2026-11-18T07:06:45.7662261Z Setting up libgsm1:amd64 (1.0.22-1build1) ...
+2026-11-18T07:06:45.7668976Z Setting up libsoxr0:amd64 (0.1.3-4build3) ...
+2026-11-18T07:06:45.7676130Z Setting up libcodec2-1.2:amd64 (1.2.0-2build1) ...
+2026-11-18T07:06:45.7684786Z Setting up fonts-wqy-zenhei (0.9.45-8) ...
+2026-11-18T07:06:45.7756529Z Setting up fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-11-18T07:06:45.7764213Z Setting up libsvtav1enc1d1:amd64 (1.7.0+dfsg-2build1) ...
+2026-11-18T07:06:45.7770968Z Setting up libxvidcore4:amd64 (2:1.3.7-1build1) ...
+2026-11-18T07:06:45.7777941Z Setting up librav1e0:amd64 (0.7.1-2) ...
+2026-11-18T07:06:45.7789490Z Setting up libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.10) ...
+2026-11-18T07:06:45.7951237Z Setting up libglib2.0-data (2.80.0-6ubuntu3.10) ...
+2026-11-18T07:06:45.7958519Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-11-18T07:06:45.7965336Z Setting up libva2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-18T07:06:45.7972534Z Setting up libfreetype6:amd64 (2.13.2+dfsg-1ubuntu0.2) ...
+2026-11-18T07:06:45.7979390Z Setting up libx11-data (2:1.8.7-1ubuntu0.1) ...
+2026-11-18T07:06:45.7986384Z Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-11-18T07:06:45.7993529Z Setting up libopus0:amd64 (1.4-1build1) ...
+2026-11-18T07:06:45.8001025Z Setting up gir1.2-glib-2.0:amd64 (2.80.0-6ubuntu3.10) ...
+2026-11-18T07:06:45.8008934Z Setting up libjxl0.7:amd64 (0.7.0-10.2ubuntu6.1) ...
+2026-11-18T07:06:45.8016331Z Setting up libx265-199:amd64 (3.5-2build1) ...
+2026-11-18T07:06:45.8024241Z Setting up libvpx9:amd64 (1.14.0-1ubuntu2.3) ...
+2026-11-18T07:06:45.8032102Z Setting up libdav1d7:amd64 (1.4.1-1build1) ...
+2026-11-18T07:06:45.8038891Z Setting up libva-drm2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-18T07:06:45.8046274Z Setting up fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-11-18T07:06:45.8081058Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+2026-11-18T07:06:45.8090105Z Setting up ocl-icd-libopencl1:amd64 (2.3.2-1build1) ...
+2026-11-18T07:06:45.8096458Z Setting up libtheora0:amd64 (1.1.1+dfsg.1-16.1build3) ...
+2026-11-18T07:06:45.8102392Z Setting up libx11-6:amd64 (2:1.8.7-1ubuntu0.1) ...
+2026-11-18T07:06:45.8109260Z Setting up xserver-common (2:21.1.12-1ubuntu1.9) ...
+2026-11-18T07:06:45.8116901Z Setting up libzvbi-common (0.2.42-2) ...
+2026-11-18T07:06:45.8124542Z Setting up libmp3lame0:amd64 (3.100-6build1) ...
+2026-11-18T07:06:45.8132610Z Setting up libvorbisenc2:amd64 (1.3.7-1build3) ...
+2026-11-18T07:06:45.8140758Z Setting up fonts-unifont (1:15.1.01-1build1) ...
+2026-11-18T07:06:45.8149384Z Setting up libx11-xcb1:amd64 (2:1.8.7-1ubuntu0.1) ...
+2026-11-18T07:06:45.8159282Z Setting up libzvbi0t64:amd64 (0.2.42-2) ...
+2026-11-18T07:06:45.8168613Z Setting up xvfb (2:21.1.12-1ubuntu1.9) ...
+2026-11-18T07:06:45.8178432Z Setting up libglib2.0-bin (2.80.0-6ubuntu3.10) ...
+2026-11-18T07:06:45.8187958Z Setting up xfonts-utils (1:7.7+6build3) ...
+2026-11-18T07:06:45.8218569Z Setting up libvdpau1:amd64 (1.5-2build1) ...
+2026-11-18T07:06:45.8229620Z Setting up xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-11-18T07:06:45.8412130Z Setting up libva-x11-2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-18T07:06:45.8420058Z Setting up xfonts-scalable (1:1.0.3-1.3) ...
+2026-11-18T07:06:45.8573134Z Setting up libavutil58:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-18T07:06:45.8579986Z Setting up libswresample4:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-18T07:06:45.8587232Z Setting up libavcodec60:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-18T07:06:45.8598058Z Processing triggers for libc-bin (2.39-0ubuntu8.8) ...
+2026-11-18T07:06:45.9596956Z Processing triggers for man-db (2.12.0-4build2) ...
+2026-11-18T07:06:45.9608548Z Not building database; man-db/auto-update is not 'true'.
+2026-11-18T07:06:45.9618383Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+2026-11-18T07:06:46.3109367Z 
+2026-11-18T07:06:46.3109686Z Restarting services...
+2026-11-18T07:06:46.3422476Z  systemctl restart irqbalance.service packagekit.service php8.3-fpm.service polkit.service udisks2.service
+2026-11-18T07:06:46.4491298Z 
+2026-11-18T07:06:46.4491686Z Service restarts being deferred:
+2026-11-18T07:06:46.4491985Z  systemctl restart ModemManager.service
+2026-11-18T07:06:46.4492267Z  systemctl restart networkd-dispatcher.service
+2026-11-18T07:06:46.4492448Z 
+2026-11-18T07:06:46.4492638Z No containers need to be restarted.
+2026-11-18T07:06:46.4492759Z 
+2026-11-18T07:06:46.4492926Z No user sessions are running outdated binaries.
+2026-11-18T07:06:46.4494437Z 
+2026-11-18T07:06:46.4495016Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-11-18T07:06:46.4784211Z Downloading Firefox 159.0 (playwright firefox v1572) from https://cdn.playwright.dev/dbazure/download/playwright/builds/firefox/1572/firefox-ubuntu-24.04.zip
+2026-11-18T07:06:46.9206091Z |                                                                                |   0% of 113.5 MiB
+2026-11-18T07:06:47.1578266Z |■■■■■■■■                                                                        |  10% of 113.5 MiB
+2026-11-18T07:06:47.2008334Z |■■■■■■■■■■■■■■■■                                                                |  20% of 113.5 MiB
+2026-11-18T07:06:47.2588485Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 113.5 MiB
+2026-11-18T07:06:47.3117577Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 113.5 MiB
+2026-11-18T07:06:47.3639645Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 113.5 MiB
+2026-11-18T07:06:47.4215237Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 113.5 MiB
+2026-11-18T07:06:47.4765517Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 113.5 MiB
+2026-11-18T07:06:47.5438529Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 113.5 MiB
+2026-11-18T07:06:47.5986365Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 113.5 MiB
+2026-11-18T07:06:47.6579208Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 113.5 MiB
+2026-11-18T07:06:48.9789224Z Firefox 159.0 (playwright firefox v1572) downloaded to /home/runner/.cache/ms-playwright/firefox-1572
+2026-11-18T07:06:49.0378607Z ##[group]Run pnpm run test-ui --project=firefox --reporter=list,json
+2026-11-18T07:06:49.0378929Z [36;1mpnpm run test-ui --project=firefox --reporter=list,json[0m
+2026-11-18T07:06:49.0388810Z shell: /usr/bin/bash -e {0}
+2026-11-18T07:06:49.0388982Z env:
+2026-11-18T07:06:49.0389160Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-18T07:06:49.0389383Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 213
+2026-11-18T07:06:49.0389574Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 780
+2026-11-18T07:06:49.0389780Z   GITHUB_REPO_NAME: BluebagAI/bench-etherpad-lite
+2026-11-18T07:06:49.0390505Z   WITH_PLUGINS: 
+2026-11-18T07:06:49.0390777Z   PLAYWRIGHT_JSON_OUTPUT_FILE: /home/runner/_work/bench-etherpad-lite/bench-etherpad-lite/results.json
+2026-11-18T07:06:49.0391073Z ##[endgroup]
+2026-11-18T07:06:49.0523366Z $ cross-env NODE_ENV=production npx playwright test --project=firefox --reporter=list,json
+2026-11-18T07:06:50.2840212Z 
+2026-11-18T07:06:50.2840755Z Running 287 tests using 2 workers
+2026-11-18T07:06:50.2841100Z 
+2026-11-18T07:06:52.3591680Z   ✓    1 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:20:1 › settings popup has dialog semantics, Escape closes it, focus returns to trigger (1.5s)
+2026-11-18T07:06:52.5893530Z   ✓    2 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:14:1 › html element has a non-empty lang attribute (1.4s)
+2026-11-18T07:06:53.0668381Z   ✓    3 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:39:1 › import_export popup has dialog semantics (694ms)
+2026-11-18T07:06:53.2457740Z   ✓    4 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:47:1 › embed popup has dialog semantics (646ms)
+2026-11-18T07:06:53.7536846Z   ✓    5 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:55:1 › users popup has dialog semantics with aria-label (675ms)
+2026-11-18T07:06:54.0136363Z   ✓    6 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:63:1 › users popup closes on Escape even when focus is outside the popup (740ms)
+2026-11-18T07:06:54.5865437Z   ✓    7 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:74:1 › export links have a localized aria-label and matching title (820ms)
+2026-11-18T07:06:54.6020836Z   ✓    8 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:102:1 › chaticon is a button with an accessible name @feature:chat (580ms)
+2026-11-18T07:06:55.1871390Z   ✓   10 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:131:1 › otherusers region has aria-live and aria-label (no aria-role typo) (563ms)
+2026-11-18T07:06:55.2511147Z   ✓    9 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:114:1 › chat header close/pin controls are buttons with accessible names @feature:chat (652ms)
+2026-11-18T07:06:55.7995854Z   ✓   12 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:154:1 › editbar toolbars have role=toolbar with accessible names (#7255) (528ms)
+2026-11-18T07:06:55.8550332Z   ✓   11 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:142:1 › show-more toolbar button has an accessible name and aria-expanded (647ms)
+2026-11-18T07:06:56.3559829Z   ✓   14 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:205:1 › online_count badge has a localized accessible label (#7255) (485ms)
+2026-11-18T07:06:56.5497201Z   ✓   13 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:176:1 › toolbar <li>/<a> wrappers are presentational (Lighthouse listitem rule, #7255) (741ms)
+2026-11-18T07:06:56.8761876Z   ✓   15 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:223:1 › linemetricsdiv is hidden from screen readers (#7255) (512ms)
+2026-11-18T07:06:57.1897235Z   ✓   16 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:233:1 › skip-to-content link bypasses toolbar (WCAG 2.4.1, #7255) (614ms)
+2026-11-18T07:06:57.4146962Z   ✓   17 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:248:1 › skip link is the first Tab target from a fresh page (WCAG 2.4.1, #7255) (523ms)
+2026-11-18T07:06:57.6750533Z   ✓   18 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:262:1 › editor-keyboard-hint exists in the editor iframe with localized text (#7255) (477ms)
+2026-11-18T07:06:58.4585262Z   ✓   19 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:283:1 › innerdocbody does not advertise role=textbox / aria-multiline (#7778) (1.0s)
+2026-11-18T07:06:58.8808522Z   ✓   20 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:299:1 › pad lines are exposed to AT as separate paragraphs with navigable links (#7778) (1.2s)
+2026-11-18T07:06:58.9577189Z   ✓   21 [firefox] › tests/frontend-new/specs/a11y_dialogs.spec.ts:335:1 › line-number sidediv is hidden from screen readers (#7255) (479ms)
+2026-11-18T07:06:59.6846288Z   ✓   22 [firefox] › tests/frontend-new/specs/alphabet.spec.ts:12:3 › All the alphabet works n stuff › when you enter any char it appears right (795ms)
+2026-11-18T07:07:04.1300079Z   ✓   23 [firefox] › tests/frontend-new/specs/anchor_scroll.spec.ts:9:3 › anchor scrolling › reapplies #L scroll after earlier content changes height (5.2s)
+2026-11-18T07:07:07.1551754Z   ✓   24 [firefox] › tests/frontend-new/specs/anchor_scroll.spec.ts:51:3 › anchor scrolling › reapply loop exits early once the target offset is stable (7.5s)
+2026-11-18T07:07:07.5029014Z   ✓   26 [firefox] › tests/frontend-new/specs/author_token_cookie.spec.ts:9:3 › author token cookie › author token cookie is HttpOnly and not readable via document.cookie (340ms)
+2026-11-18T07:07:07.8894536Z   ✓   25 [firefox] › tests/frontend-new/specs/anchor_scroll.spec.ts:80:3 › anchor scrolling › user scroll cancels the reapply loop so navigation is not locked (3.8s)
+2026-11-18T07:07:08.1013478Z   ✓   27 [firefox] › tests/frontend-new/specs/author_token_cookie.spec.ts:24:3 › author token cookie › authorID is stable across reload in the same context (593ms)
+2026-11-18T07:07:08.7447091Z   ✓   28 [firefox] › tests/frontend-new/specs/author_token_cookie.spec.ts:33:3 › author token cookie › authorID differs in an isolated second context (848ms)
+2026-11-18T07:07:09.3474685Z   ✓   30 [firefox] › tests/frontend-new/specs/bold.spec.ts:10:3 › bold button › makes text bold on click (597ms)
+2026-11-18T07:07:09.8471650Z   ✓   31 [firefox] › tests/frontend-new/specs/bold.spec.ts:34:3 › bold button › makes text bold on keypress (495ms)
+2026-11-18T07:07:11.7361603Z   ✓   29 [firefox] › tests/frontend-new/specs/bold_paste.spec.ts:9:1 › bold text retains formatting after copy-paste (3.6s)
+2026-11-18T07:07:12.7584264Z   ✓   32 [firefox] › tests/frontend-new/specs/change_user_color.spec.ts:10:3 › change user color › Color picker matches original color and remembers the user color after a refresh (2.9s)
+2026-11-18T07:07:13.5408022Z   ✓   33 [firefox] › tests/frontend-new/specs/change_user_color.spec.ts:59:3 › change user color › Own user color is shown when you enter a chat @feature:chat @feature:authorship-bg-color (1.8s)
+2026-11-18T07:07:13.8723808Z   ✓   34 [firefox] › tests/frontend-new/specs/change_user_name.spec.ts:11:1 › Remembers the username after a refresh @feature:username (1.1s)
+2026-11-18T07:07:14.7343658Z   ✓   36 [firefox] › tests/frontend-new/specs/change_user_name.spec.ts:46:1 › #myusernameform has 10px left margin and is not width-capped @feature:username (854ms)
+2026-11-18T07:07:14.9459304Z   ✓   35 [firefox] › tests/frontend-new/specs/change_user_name.spec.ts:25:1 › Own user name is shown when you enter a chat @feature:chat @feature:username (1.4s)
+2026-11-18T07:07:15.6364236Z   ✓   37 [firefox] › tests/frontend-new/specs/chat.spec.ts:23:1 › opens chat, sends a message, makes sure it exists on the page and hides chat @feature:chat (892ms)
+2026-11-18T07:07:15.9046093Z   ✓   38 [firefox] › tests/frontend-new/specs/chat.spec.ts:43:1 › makes sure that an empty message can't be sent @feature:chat (941ms)
+2026-11-18T07:07:16.4184119Z Chat false
+2026-11-18T07:07:16.4783591Z Chat true
+2026-11-18T07:07:16.5589147Z Chat false
+2026-11-18T07:07:16.6343717Z Chat false
+2026-11-18T07:07:16.8332213Z Chat true
+2026-11-18T07:07:16.8395222Z Chat true
+2026-11-18T07:07:16.8979395Z Chat false
+2026-11-18T07:07:16.9068929Z Chat false
+2026-11-18T07:07:16.9105216Z Chat 
+2026-11-18T07:07:16.9209500Z   ✓   39 [firefox] › tests/frontend-new/specs/chat.spec.ts:67:1 › makes chat stick to right side of the screen via settings, remove sticky via settings, close it @feature:chat (1.3s)
+2026-11-18T07:07:16.9634114Z Chat 
+2026-11-18T07:07:16.9814736Z   ✓   40 [firefox] › tests/frontend-new/specs/chat.spec.ts:85:1 › makes chat stick to right side of the screen via icon on the top right, remove sticky via icon, close it @feature:chat (1.1s)
+2026-11-18T07:07:17.8115110Z   ✓   41 [firefox] › tests/frontend-new/specs/chat.spec.ts:105:1 › Checks showChat=false URL Parameter hides chat then when removed it shows chat @feature:chat (885ms)
+2026-11-18T07:07:18.3109122Z   ✓   43 [firefox] › tests/frontend-new/specs/chat.spec.ts:152:1 › chat title bar lays out as a centred flex row with underscore minimize @feature:chat @feature:rtl-toggle (486ms)
+2026-11-18T07:07:18.7739037Z   ✓   44 [firefox] › tests/frontend-new/specs/chat.spec.ts:207:1 › chat icon click reliably opens the chat box @feature:chat (454ms)
+2026-11-18T07:07:18.9494130Z   ✓   42 [firefox] › tests/frontend-new/specs/chat.spec.ts:133:1 › chat icon click reveals chatbox after a disable → enable cycle @feature:chat (2.0s)
+2026-11-18T07:07:19.7103332Z   ✓   45 [firefox] › tests/frontend-new/specs/clear_authorship_color.spec.ts:17:1 › clear authorship color @feature:clear-authorship (923ms)
+2026-11-18T07:07:19.9467582Z   ✓   46 [firefox] › tests/frontend-new/specs/clear_authorship_color.spec.ts:40:1 › clear authorship colors can be undone to restore author colors @feature:clear-authorship (987ms)
+2026-11-18T07:07:21.0108938Z   ✓   47 [firefox] › tests/frontend-new/specs/clear_authorship_color.spec.ts:77:1 › clears authorship when first line has line attributes @feature:clear-authorship (1.3s)
+2026-11-18T07:07:21.7211145Z   ✓   49 [firefox] › tests/frontend-new/specs/delete.spec.ts:10:1 › delete keystroke (703ms)
+2026-11-18T07:07:22.2338650Z   ✓   50 [firefox] › tests/frontend-new/specs/editbar.spec.ts:9:1 › should go to home on pad (504ms)
+2026-11-18T07:07:23.4094480Z   ✓   51 [firefox] › tests/frontend-new/specs/embed_value.spec.ts:66:7 › embed links › read and write › the share link is the actual pad url (1.2s)
+2026-11-18T07:07:24.0770333Z   ✓   48 [firefox] › tests/frontend-new/specs/collab_client.spec.ts:47:3 › Messages in the COLLABROOM › bug #4978 regression test (4.1s)
+2026-11-18T07:07:24.2211665Z   ✓   52 [firefox] › tests/frontend-new/specs/embed_value.spec.ts:78:5 › embed links › read and write › is an iframe with the correct url parameters and correct size (805ms)
+2026-11-18T07:07:24.8748430Z   ✓   53 [firefox] › tests/frontend-new/specs/embed_value.spec.ts:97:7 › embed links › when read only option is set › the share link shows a read only url (789ms)
+2026-11-18T07:07:25.0976525Z   ✓   54 [firefox] › tests/frontend-new/specs/embed_value.spec.ts:114:7 › embed links › when read only option is set › the embed as iframe code is an iframe with the correct url parameters and correct size (858ms)
+2026-11-18T07:07:25.5313419Z   ✓   55 [firefox] › tests/frontend-new/specs/embed_value.spec.ts:138:5 › embed links › URL encoding of pad names › share link encodes special characters in pad name (648ms)
+2026-11-18T07:07:25.6539188Z   ✓   56 [firefox] › tests/frontend-new/specs/enter.spec.ts:11:3 › enter keystroke › creates a new line & puts cursor onto a new line (549ms)
+2026-11-18T07:07:26.0889490Z   ✓   58 [firefox] › tests/frontend-new/specs/error_sanitization.spec.ts:12:3 › error sanitization › production mode hides error details from gritter popup @feature:error-gritter (427ms)
+2026-11-18T07:07:26.4891696Z   ✓   59 [firefox] › tests/frontend-new/specs/error_sanitization.spec.ts:47:3 › error sanitization › development mode shows full error details in gritter popup @feature:error-gritter (393ms)
+2026-11-18T07:07:26.8985272Z   ✓   60 [firefox] › tests/frontend-new/specs/error_sanitization.spec.ts:72:3 › error sanitization › duplicate errors are deduplicated in both modes @feature:error-gritter (404ms)
+2026-11-18T07:07:27.0864974Z   ✓   57 [firefox] › tests/frontend-new/specs/enter.spec.ts:33:3 › enter keystroke › enter is always visible after event (1.5s)
+2026-11-18T07:07:27.3713957Z   ✓   61 [firefox] › tests/frontend-new/specs/error_sanitization.spec.ts:95:3 › error sanitization › errors before clientVars handshake default to hiding details @feature:error-gritter (467ms)
+2026-11-18T07:07:27.8212187Z   ✓   63 [firefox] › tests/frontend-new/specs/hide_menu_right.spec.ts:13:3 › showMenuRight URL parameter › without the parameter, .menu_right is visible (442ms)
+2026-11-18T07:07:28.3537334Z   ✓   62 [firefox] › tests/frontend-new/specs/font_type.spec.ts:14:3 › font select › makes text RobotoMono (1.3s)
+2026-11-18T07:07:28.6868371Z   ✓   64 [firefox] › tests/frontend-new/specs/hide_menu_right.spec.ts:17:3 › showMenuRight URL parameter › showMenuRight=false hides .menu_right (859ms)
+2026-11-18T07:07:29.0872762Z   ✓   65 [firefox] › tests/frontend-new/specs/hide_menu_right.spec.ts:24:3 › showMenuRight URL parameter › showMenuRight=true keeps .menu_right visible (724ms)
+2026-11-18T07:07:29.9043878Z   ✓   67 [firefox] › tests/frontend-new/specs/hide_menu_right.spec.ts:60:3 › showMenuRight URL parameter › readonly pad with showMenuRight=false hides the menu (811ms)
+2026-11-18T07:07:30.2427566Z   ✓   66 [firefox] › tests/frontend-new/specs/hide_menu_right.spec.ts:47:3 › showMenuRight URL parameter › readonly pad shows .menu_right by default (1.5s)
+2026-11-18T07:07:30.8432244Z   ✓   69 [firefox] › tests/frontend-new/specs/html10n_form_controls_aria.spec.ts:21:1 › html10n auto-populates aria-label on <select> with data-l10n-id (588ms)
+2026-11-18T07:07:30.8459026Z   ✓   68 [firefox] › tests/frontend-new/specs/hide_menu_right.spec.ts:69:3 › showMenuRight URL parameter › readonly pad with showMenuRight=true keeps the menu visible (928ms)
+2026-11-18T07:07:31.3033708Z   ✓   70 [firefox] › tests/frontend-new/specs/html10n_form_controls_aria.spec.ts:47:1 › html10n auto-populates aria-label on <textarea> with data-l10n-id (449ms)
+2026-11-18T07:07:31.7764951Z   ✓   72 [firefox] › tests/frontend-new/specs/html10n_form_controls_aria.spec.ts:105:1 › an author-supplied aria-label on a form control is preserved (468ms)
+2026-11-18T07:07:31.8354918Z   ✓   71 [firefox] › tests/frontend-new/specs/html10n_form_controls_aria.spec.ts:62:1 › no "could not translate element content" warning for <select data-l10n-id> (974ms)
+2026-11-18T07:07:32.2210732Z   ✓   73 [firefox] › tests/frontend-new/specs/inactive_color_fade.spec.ts:14:3 › fadeInactiveAuthorColors (issue #7138) › server-side default is true (legacy fade behavior preserved) (438ms)
+2026-11-18T07:07:32.3856448Z   ✓   74 [firefox] › tests/frontend-new/specs/inactive_color_fade.spec.ts:20:3 › fadeInactiveAuthorColors (issue #7138) › per-pad view default propagates from server settings (542ms)
+2026-11-18T07:07:32.9073484Z   ✓   75 [firefox] › tests/frontend-new/specs/inactive_color_fade.spec.ts:26:3 › fadeInactiveAuthorColors (issue #7138) › ?fadeInactiveAuthorColors=false flips the per-pad view value (681ms)
+2026-11-18T07:07:33.3864695Z   ✓   76 [firefox] › tests/frontend-new/specs/inactive_color_fade.spec.ts:33:3 › fadeInactiveAuthorColors (issue #7138) › My View checkbox toggles the per-user cookie (982ms)
+2026-11-18T07:07:33.4113698Z   ✓   77 [firefox] › tests/frontend-new/specs/indentation.spec.ts:9:3 › indentation button › indent text with keypress (496ms)
+2026-11-18T07:07:33.9207259Z   ✓   78 [firefox] › tests/frontend-new/specs/indentation.spec.ts:28:3 › indentation button › indent text with button (520ms)
+2026-11-18T07:07:34.1425480Z   ✓   79 [firefox] › tests/frontend-new/specs/indentation.spec.ts:37:3 › indentation button › keeps the indent on enter for the new line (721ms)
+2026-11-18T07:07:34.9495798Z   ✓   80 [firefox] › tests/frontend-new/specs/indentation.spec.ts:61:3 › indentation button › indents text with spaces on enter if previous line ends with ':', '[', '(', or '{' (1.0s)
+2026-11-18T07:07:35.0061959Z   ✓   81 [firefox] › tests/frontend-new/specs/indentation.spec.ts:122:3 › indentation button › appends indentation to the indent of previous line if previous line ends with ':', '[', '(', or '{' (856ms)
+2026-11-18T07:07:35.6294416Z   ✓   83 [firefox] › tests/frontend-new/specs/indentation.spec.ts:191:3 › indentation button › makes text indented and outdented (618ms)
+2026-11-18T07:07:35.9364541Z   ✓   82 [firefox] › tests/frontend-new/specs/indentation.spec.ts:144:3 › indentation button › issue #2772 shows '*' when multiple indented lines  receive a style and are outdented (980ms)
+2026-11-18T07:07:36.6742618Z   ✓   84 [firefox] › tests/frontend-new/specs/inner_height.spec.ts:12:3 › height regression after ace.js refactoring › clientHeight should equal scrollHeight with few lines (1.0s)
+2026-11-18T07:07:37.4888215Z   ✓   86 [firefox] › tests/frontend-new/specs/italic.spec.ts:10:3 › italic some text › makes text italic using button (805ms)
+2026-11-18T07:07:37.5834361Z   ✓   85 [firefox] › tests/frontend-new/specs/inner_height.spec.ts:30:3 › height regression after ace.js refactoring › client height should be less than scrollHeight with many lines (1.6s)
+2026-11-18T07:07:38.1917095Z   ✓   87 [firefox] › tests/frontend-new/specs/italic.spec.ts:40:3 › italic some text › makes text italic using keypress (686ms)
+2026-11-18T07:07:38.8342134Z   ✓   88 [firefox] › tests/frontend-new/specs/language.spec.ts:21:3 › Language select and change › makes text german (1.2s)
+2026-11-18T07:07:39.7553737Z   ✓   89 [firefox] › tests/frontend-new/specs/language.spec.ts:36:3 › Language select and change › makes text English (1.6s)
+2026-11-18T07:07:40.5135887Z   ✓   90 [firefox] › tests/frontend-new/specs/language.spec.ts:56:3 › Language select and change › changes direction when picking an rtl lang (1.7s)
+2026-11-18T07:07:40.9093379Z   ✓   91 [firefox] › tests/frontend-new/specs/language.spec.ts:76:3 › Language select and change › changes direction when picking an ltr lang (1.1s)
+2026-11-18T07:07:41.8852795Z   ✓   92 [firefox] › tests/frontend-new/specs/language.spec.ts:97:3 › Language select and change › dropdown reflects the browser-detected language (1.4s)
+2026-11-18T07:07:42.1290294Z   ✓   93 [firefox] › tests/frontend-new/specs/line_ops.spec.ts:20:3 › Line ops (#6433) › Ctrl+Shift+D duplicates the current line below itself (1.2s)
+2026-11-18T07:07:43.1090489Z   ✓   94 [firefox] › tests/frontend-new/specs/line_ops.spec.ts:41:3 › Line ops (#6433) › Ctrl+Shift+K deletes the current line (1.2s)
+2026-11-18T07:07:43.6002098Z   ✓   95 [firefox] › tests/frontend-new/specs/line_ops.spec.ts:65:3 › Line ops (#6433) › Ctrl+Shift+D duplicates every line in a multi-line selection (1.5s)
+2026-11-18T07:07:43.6751564Z   ✓   96 [firefox] › tests/frontend-new/specs/list_wrap_indent.spec.ts:10:3 › numbered list wrapped line indentation › wrapped lines in a numbered list item are indented (555ms)
+2026-11-18T07:07:44.1780209Z   ✓   97 [firefox] › tests/frontend-new/specs/ordered_list.spec.ts:11:5 › ordered_list.js › issue #4748 keeps numbers increment on OL (570ms)
+2026-11-18T07:07:44.2979791Z   ✓   98 [firefox] › tests/frontend-new/specs/ordered_list.spec.ts:34:5 › ordered_list.js › issue #1125 keeps the numbered list on enter for the new line (610ms)
+2026-11-18T07:07:45.1450426Z   ✓  100 [firefox] › tests/frontend-new/specs/ordered_list.spec.ts:97:3 › issue #5718 consecutive numbering works after indented sub-bullets (840ms)
+2026-11-18T07:07:45.4960526Z   ✓   99 [firefox] › tests/frontend-new/specs/ordered_list.spec.ts:59:3 › issue #5160 ordered list increments correctly after unordered list (1.3s)
+2026-11-18T07:07:45.6310312Z   ✓  101 [firefox] › tests/frontend-new/specs/ordered_list.spec.ts:142:5 › Pressing Tab in an OL increases and decreases indentation › indent and de-indent list item with keypress (476ms)
+2026-11-18T07:07:46.0992980Z   ✓  103 [firefox] › tests/frontend-new/specs/outdated_notice.spec.ts:43:3 › outdated notice (gritter-based) › outdated:null — no outdated-notice gritter is shown (460ms)
+2026-11-18T07:07:46.1307771Z   ✓  102 [firefox] › tests/frontend-new/specs/ordered_list.spec.ts:169:5 › Pressing indent/outdent button in an OL increases and decreases indentation and bullet / ol formatting › indent and de-indent list item with indent button (625ms)
+2026-11-18T07:07:46.5693182Z   ✓  104 [firefox] › tests/frontend-new/specs/outdated_notice.spec.ts:54:3 › outdated notice (gritter-based) › outdated:minor, isFirstAuthor:false — no gritter shown (client guard) (455ms)
+2026-11-18T07:07:47.2293101Z   ✓  105 [firefox] › tests/frontend-new/specs/outdated_notice.spec.ts:66:3 › outdated notice (gritter-based) › outdated:minor, isFirstAuthor:true — gritter appears with correct text (1.1s)
+2026-11-18T07:07:47.8205515Z   ✓  106 [firefox] › tests/frontend-new/specs/outdated_notice.spec.ts:82:3 › outdated notice (gritter-based) › user dismisses by clicking X — gritter disappears (1.2s)
+2026-11-18T07:07:48.1131916Z   ✓  107 [firefox] › tests/frontend-new/specs/outdated_notice.spec.ts:96:3 › outdated notice (gritter-based) › server returns 500 — no gritter and no user-visible error (878ms)
+2026-11-18T07:07:48.5013430Z   ✓  109 [firefox] › tests/frontend-new/specs/pad_deletion_token.spec.ts:22:3 › pad deletion token › creator sees a token modal exactly once and can dismiss it (379ms)
+2026-11-18T07:07:49.8290821Z   ✓  110 [firefox] › tests/frontend-new/specs/pad_deletion_token.spec.ts:38:3 › pad deletion token › second device can delete using the captured token (1.3s)
+2026-11-18T07:07:51.0014293Z   ✓  111 [firefox] › tests/frontend-new/specs/pad_deletion_token.spec.ts:59:3 › pad deletion token › creator pasting a wrong token into the disclosure field does not delete the pad (1.2s)
+2026-11-18T07:07:52.5776707Z   ✓  112 [firefox] › tests/frontend-new/specs/pad_deletion_token.spec.ts:91:3 › pad deletion token › wrong token keeps the pad alive and surfaces a shout (1.6s)
+2026-11-18T07:07:54.8634839Z   ✓  113 [firefox] › tests/frontend-new/specs/pad_deletion_token.spec.ts:149:3 › pad deletion token with the modal suppressed › no modal; the settings toggle shows and copies a working token, across reloads (2.3s)
+2026-11-18T07:07:55.6958874Z   ✓  114 [firefox] › tests/frontend-new/specs/pad_deletion_token.spec.ts:208:3 › pad deletion token with the modal suppressed › not offered when the modal is not suppressed (825ms)
+2026-11-18T07:07:55.9888859Z   ✓  115 [firefox] › tests/frontend-new/specs/pad_retention_notice.spec.ts:27:3 › pad retention notice › no notice when retention is off (287ms)
+2026-11-18T07:07:56.2828853Z   ✓  116 [firefox] › tests/frontend-new/specs/pad_retention_notice.spec.ts:32:3 › pad retention notice › warns in days when more than a day is left (287ms)
+2026-11-18T07:07:56.6221650Z   ✓  117 [firefox] › tests/frontend-new/specs/pad_retention_notice.spec.ts:43:3 › pad retention notice › warns in hours, singular, when under a day is left (334ms)
+2026-11-18T07:07:56.9023533Z   ✓  118 [firefox] › tests/frontend-new/specs/pad_retention_notice.spec.ts:50:3 › pad retention notice › tells the user an expired pad was deleted (275ms)
+2026-11-18T07:07:57.2057144Z   ✓  108 [firefox] › tests/frontend-new/specs/outdated_notice.spec.ts:107:3 › outdated notice (gritter-based) › auto-fade after 8s — gritter gone after 9s (9.4s)
+2026-11-18T07:07:58.0731763Z   ✓  119 [firefox] › tests/frontend-new/specs/pad_retention_notice.spec.ts:60:3 › pad retention notice › the notice can be closed (1.2s)
+2026-11-18T07:07:58.4264503Z   ✓  120 [firefox] › tests/frontend-new/specs/pad_settings.spec.ts:6:3 › creator-owned pad settings › shows pad settings only to the creator; delete pad is creator-gated but separate (1.2s)
+2026-11-18T07:08:00.0677847Z   ✓  122 [firefox] › tests/frontend-new/specs/pad_settings.spec.ts:93:3 › creator-owned pad settings › creator can keep authorship colors while pad-wide enforced settings keep them off for other users (1.6s)
+2026-11-18T07:08:00.4185839Z   ✓  121 [firefox] › tests/frontend-new/specs/pad_settings.spec.ts:34:3 › creator-owned pad settings › pad settings act as defaults until enforcement is enabled @feature:line-numbers (2.3s)
+2026-11-18T07:08:01.3665266Z   ✓  123 [firefox] › tests/frontend-new/specs/pad_settings.spec.ts:130:3 › creator-owned pad settings › uses My View defaults for newly created pads without changing an existing pad default @feature:line-numbers (1.3s)
+2026-11-18T07:08:02.1316497Z   ✓  124 [firefox] › tests/frontend-new/specs/pad_settings.spec.ts:153:3 › creator-owned pad settings › disabling chat suppresses chat gritter notifications @feature:chat (1.7s)
+2026-11-18T07:08:02.2399449Z   ✓  125 [firefox] › tests/frontend-new/specs/pad_settings.spec.ts:176:3 › creator-owned pad settings › settings popup stays scrollable when the viewport is short (863ms)
+2026-11-18T07:08:03.4410326Z   ✓  127 [firefox] › tests/frontend-new/specs/pad_settings.spec.ts:232:5 › creator-owned pad settings › #padsettings-viewfontmenu dropdown opens under prefers-reduced-motion (1.2s)
+2026-11-18T07:08:03.8954045Z   ✓  126 [firefox] › tests/frontend-new/specs/pad_settings.spec.ts:202:3 › creator-owned pad settings › Pad-wide font dropdown opens visibly when popup is scrolled to bottom (1.8s)
+2026-11-18T07:08:04.5070250Z   ✓  128 [firefox] › tests/frontend-new/specs/pad_settings.spec.ts:232:5 › creator-owned pad settings › #padsettings-languagemenu dropdown opens under prefers-reduced-motion (1.1s)
+2026-11-18T07:08:04.8467716Z   ✓  129 [firefox] › tests/frontend-new/specs/pad_settings.spec.ts:254:3 › creator-owned pad settings › disabling chat disables and visually greys the dependent chat toggles @feature:chat (942ms)
+2026-11-18T07:08:06.1179941Z   ✓  131 [firefox] › tests/frontend-new/specs/padmode.spec.ts:49:3 › in-pad history mode › Return-to-live exits history and clears the hash (1.3s)
+2026-11-18T07:08:06.2490938Z   ✓  130 [firefox] › tests/frontend-new/specs/padmode.spec.ts:13:3 › in-pad history mode › toolbar button enters history without leaving the pad URL (1.7s)
+2026-11-18T07:08:07.0546377Z   ✓  132 [firefox] › tests/frontend-new/specs/padmode.spec.ts:66:3 › in-pad history mode › browser back exits history mode (929ms)
+2026-11-18T07:08:07.1526098Z   ✓  133 [firefox] › tests/frontend-new/specs/padmode.spec.ts:80:3 › in-pad history mode › legacy /p/:pad/timeslider URL redirects to the pad page (894ms)
+2026-11-18T07:08:07.9464561Z   ✓  134 [firefox] › tests/frontend-new/specs/padmode.spec.ts:96:3 › in-pad history mode › Follow + Playback speed are inline in the toolbar in history mode (884ms)
+2026-11-18T07:08:08.6024739Z   ✓  135 [firefox] › tests/frontend-new/specs/padmode.spec.ts:117:3 › in-pad history mode › embedded iframe shows only the editor surface (no inner editbar) (1.4s)
+2026-11-18T07:08:08.8696887Z   ✓  136 [firefox] › tests/frontend-new/specs/padmode.spec.ts:134:3 › in-pad history mode › outer toolbar swaps formatting menu for history controls (913ms)
+2026-11-18T07:08:10.5787823Z   ✓  138 [firefox] › tests/frontend-new/specs/padmode.spec.ts:190:3 › in-pad history mode › dark mode propagates into the history iframe (1.7s)
+2026-11-18T07:08:10.8125616Z   ✓  137 [firefox] › tests/frontend-new/specs/padmode.spec.ts:158:3 › in-pad history mode › outer slider drives the embedded timeslider revision (2.2s)
+2026-11-18T07:08:11.7222706Z   ✓  139 [firefox] › tests/frontend-new/specs/padmode.spec.ts:217:3 › in-pad history mode › chat panel is filtered to messages newer than the historical revision (1.1s)
+2026-11-18T07:08:13.3596592Z   ✓  140 [firefox] › tests/frontend-new/specs/padmode.spec.ts:261:3 › in-pad history mode › outer Export hrefs point at the historical revision in history mode (2.5s)
+2026-11-18T07:08:13.8664123Z   ✓  141 [firefox] › tests/frontend-new/specs/padmode.spec.ts:284:3 › in-pad history mode › line numbers align with each line of text in history mode (2.1s)
+2026-11-18T07:08:15.0323944Z   ✓  142 [firefox] › tests/frontend-new/specs/padmode.spec.ts:329:3 › in-pad history mode › users panel shows authors-at-this-revision in history mode (1.7s)
+2026-11-18T07:08:15.3408346Z   ✓  143 [firefox] › tests/frontend-new/specs/padmode.spec.ts:349:3 › in-pad history mode › history iframe occupies the editor flex slot so side panels sit beside it (1.5s)
+2026-11-18T07:08:19.8026479Z   ✓  144 [firefox] › tests/frontend-new/specs/page_up_down.spec.ts:12:3 › Page Up / Page Down › PageDown moves caret forward by a page of lines (4.8s)
+2026-11-18T07:08:19.8111882Z   ✓  145 [firefox] › tests/frontend-new/specs/page_up_down.spec.ts:51:3 › Page Up / Page Down › PageUp moves caret backward by a page of lines (4.5s)
+2026-11-18T07:08:24.4899285Z   ✓  146 [firefox] › tests/frontend-new/specs/page_up_down.spec.ts:91:3 › Page Up / Page Down › PageDown with consecutive long wrapped lines moves by correct amount (#4562) (4.7s)
+2026-11-18T07:08:25.5341715Z   ✓  147 [firefox] › tests/frontend-new/specs/page_up_down.spec.ts:146:3 › Page Up / Page Down › PageDown then PageUp returns to approximately same position (5.7s)
+2026-11-18T07:08:25.8766089Z   ✓  149 [firefox] › tests/frontend-new/specs/privacy_banner.spec.ts:44:3 › privacy banner (gritter-based) › disabled by default — no privacy gritter is shown (336ms)
+2026-11-18T07:08:26.1914438Z   ✓  150 [firefox] › tests/frontend-new/specs/privacy_banner.spec.ts:49:3 › privacy banner (gritter-based) › enabled=false leaves the page free of a privacy gritter (309ms)
+2026-11-18T07:08:26.3289856Z   ✓  148 [firefox] › tests/frontend-new/specs/pagedown_wrapped_lines.spec.ts:16:3 › PageDown on consecutive long wrapped lines (#4562) › PageDown scrolls when three very long lines fill the viewport (1.8s)
+2026-11-18T07:08:26.5701115Z   ✓  151 [firefox] › tests/frontend-new/specs/privacy_banner.spec.ts:61:3 › privacy banner (gritter-based) › renders title, body paragraphs, and link as a sticky bottom gritter (370ms)
+2026-11-18T07:08:26.9289025Z   ✓  153 [firefox] › tests/frontend-new/specs/privacy_banner.spec.ts:107:3 › privacy banner (gritter-based) › dismissible — pre-existing localStorage flag suppresses the gritter (345ms)
+2026-11-18T07:08:27.1150529Z   ✓  152 [firefox] › tests/frontend-new/specs/privacy_banner.spec.ts:86:3 › privacy banner (gritter-based) › dismissible — clicking gritter close persists flag in localStorage (774ms)
+2026-11-18T07:08:27.5009581Z   ✓  155 [firefox] › tests/frontend-new/specs/privacy_banner.spec.ts:146:3 › privacy banner (gritter-based) › sticky — pre-existing localStorage flag is ignored (379ms)
+2026-11-18T07:08:27.8325038Z   ✓  156 [firefox] › tests/frontend-new/specs/privacy_banner.spec.ts:162:3 › privacy banner (gritter-based) › javascript: learnMoreUrl is rejected — no anchor rendered (324ms)
+2026-11-18T07:08:28.1313415Z   ✓  154 [firefox] › tests/frontend-new/specs/privacy_banner.spec.ts:123:3 › privacy banner (gritter-based) › sticky — closing the gritter does NOT persist a dismissal flag (1.2s)
+2026-11-18T07:08:28.6814456Z   ✓  157 [firefox] › tests/frontend-new/specs/privacy_banner.spec.ts:175:3 › privacy banner (gritter-based) › data: learnMoreUrl is rejected — no anchor rendered (842ms)
+2026-11-18T07:08:29.0626900Z   ✓  159 [firefox] › tests/frontend-new/specs/privacy_banner.spec.ts:210:3 › privacy banner (gritter-based) › mailto: learnMoreUrl is allowed (374ms)
+2026-11-18T07:08:29.4019251Z   ✓  158 [firefox] › tests/frontend-new/specs/privacy_banner.spec.ts:187:3 › privacy banner (gritter-based) › unknown dismissal value is treated as dismissible (defense-in-depth) (1.3s)
+2026-11-18T07:08:30.0511086Z   ✓  160 [firefox] › tests/frontend-new/specs/recent_pads_delete.spec.ts:21:3 › recent pads after pad deletion › creator deleting a pad removes it from the welcome screen (981ms)
+2026-11-18T07:08:30.3662852Z   ✓  161 [firefox] › tests/frontend-new/specs/recent_pads_delete.spec.ts:34:3 › recent pads after pad deletion › legacy URL-encoded recent pad entries are removed too (952ms)
+2026-11-18T07:08:30.5952667Z   ✓  163 [firefox] › tests/frontend-new/specs/recent_pads.spec.ts:4:3 › Recent Pads › should display correctly encoded URLs for recent pads (225ms)
+2026-11-18T07:08:31.4964590Z   ✓  162 [firefox] › tests/frontend-new/specs/recent_pads_delete.spec.ts:57:3 › recent pads after pad deletion › deleting with a token on a second device removes it from that device (1.4s)
+2026-11-18T07:08:32.1640168Z   ✓  164 [firefox] › tests/frontend-new/specs/redo.spec.ts:12:3 › undo button then redo button › redo some typing with button (1.6s)
+2026-11-18T07:08:32.4473252Z   ✓  165 [firefox] › tests/frontend-new/specs/redo.spec.ts:39:3 › undo button then redo button › redo some typing with keypress (941ms)
+2026-11-18T07:08:33.1010933Z   ✓  167 [firefox] › tests/frontend-new/specs/rtl_url_param.spec.ts:11:3 › RTL URL parameter › rtl=true enables RTL mode (642ms)
+2026-11-18T07:08:33.4639053Z   ✓  166 [firefox] › tests/frontend-new/specs/rtl_pad_wide_enforce.spec.ts:26:3 › RTL pad-wide + enforce › pad-wide RTL applies to the creator even with a stale personal setting @feature:rtl-toggle (1.3s)
+2026-11-18T07:08:33.9126919Z   ✓  168 [firefox] › tests/frontend-new/specs/rtl_url_param.spec.ts:16:3 › RTL URL parameter › rtl=false disables RTL mode after rtl=true @feature:rtl-toggle (803ms)
+2026-11-18T07:08:34.2414732Z   ✓  169 [firefox] › tests/frontend-new/specs/rtl_url_param.spec.ts:26:3 › RTL URL parameter › no rtl param falls back to the pad setting after an RTL URL override @feature:rtl-toggle (769ms)
+2026-11-18T07:08:34.6395654Z   ✓  170 [firefox] › tests/frontend-new/specs/rtl_url_param.spec.ts:38:3 › RTL URL parameter › rtl content option flips only the pad inner contents, not the whole page @feature:rtl-toggle (717ms)
+2026-11-18T07:08:34.7836905Z   -  172 [firefox] › tests/frontend-new/specs/scroll_caret_viewport.spec.ts:179:3 › scroll when caret is in the last line of the viewport › scrolls the caret line clear of the bottom edge of the viewport
+2026-11-18T07:08:35.5819218Z   -  173 [firefox] › tests/frontend-new/specs/select_focus_restore.spec.ts:8:1 › toolbar select change returns focus to the pad editor (#7589)
+2026-11-18T07:08:35.9073150Z   ✓  174 [firefox] › tests/frontend-new/specs/session_transfer_copy.spec.ts:16:3 › session transfer dialog copy › transfer tab describes a code, not a link (317ms)
+2026-11-18T07:08:36.2024058Z   ✓  175 [firefox] › tests/frontend-new/specs/session_transfer_copy.spec.ts:42:3 › session transfer dialog copy › receive tab asks for the code to be pasted (287ms)
+2026-11-18T07:08:36.6965631Z   ✓  176 [firefox] › tests/frontend-new/specs/share_readonly.spec.ts:12:1 › explains that read-only sharing selects a link, not pad permissions (483ms)
+2026-11-18T07:08:37.1130748Z   ✓  171 [firefox] › tests/frontend-new/specs/scroll_caret_viewport.spec.ts:166:3 › scroll when caret is in the last line of the viewport › moving the caret to the bottom of the viewport does not throw (2.9s)
+2026-11-18T07:08:37.5528260Z   ✓  178 [firefox] › tests/frontend-new/specs/strikethrough.spec.ts:10:3 › strikethrough button › makes text strikethrough (429ms)
+2026-11-18T07:08:38.2979273Z   ✓  177 [firefox] › tests/frontend-new/specs/share_readonly.spec.ts:23:1 › switches share links without changing access through either link (1.6s)
+2026-11-18T07:08:38.4895210Z   ✓  179 [firefox] › tests/frontend-new/specs/theme_color_dark_mode.spec.ts:18:3 › light color scheme › theme-color meta tracks the dark-mode toggle (927ms)
+2026-11-18T07:08:38.7649010Z   ✓  180 [firefox] › tests/frontend-new/specs/theme_color_dark_mode.spec.ts:43:3 › dark color scheme › theme-color meta is dark at first paint on dark-OS clients (456ms)
+2026-11-18T07:08:38.8976082Z   ✓  181 [firefox] › tests/frontend-new/specs/theme_color_dark_mode.spec.ts:52:3 › dark color scheme › page paints dark without a light flash on dark-OS clients (396ms)
+2026-11-18T07:08:39.1711834Z   ✓  182 [firefox] › tests/frontend-new/specs/theme_color_dark_mode.spec.ts:63:3 › dark color scheme › root canvas matches the toolbar so the iOS status-bar area is not white (397ms)
+2026-11-18T07:08:39.3358029Z   ✓  183 [firefox] › tests/frontend-new/specs/theme_color_dark_mode.spec.ts:77:3 › dark color scheme › root colour variables follow the dark background, not the light :root defaults (430ms)
+2026-11-18T07:08:40.2954115Z   ✓  184 [firefox] › tests/frontend-new/specs/timeslider_author_colors.spec.ts:9:3 › timeslider authorship colors › respects showAuthorshipColors=false cookie from pad editor (1.1s)
+2026-11-18T07:08:40.4674596Z   ✓  185 [firefox] › tests/frontend-new/specs/timeslider_author_colors.spec.ts:27:3 › timeslider authorship colors › shows author colors by default (cookie unset) (1.1s)
+2026-11-18T07:08:41.5726801Z   ✓  187 [firefox] › tests/frontend-new/specs/timeslider_author_colors.spec.ts:64:3 › timeslider authorship colors › font-type selection persists and restores from cookie (1.1s)
+2026-11-18T07:08:41.6211025Z   ✓  186 [firefox] › tests/frontend-new/specs/timeslider_author_colors.spec.ts:39:3 › timeslider authorship colors › font type selector applies font-family to innerdocbody (1.3s)
+2026-11-18T07:08:43.5923720Z   ✓  189 [firefox] › tests/frontend-new/specs/timeslider_export_links.spec.ts:51:3 › timeslider export links › export hrefs target the viewed revision, including a numeric pad id (2.0s)
+2026-11-18T07:08:43.9364455Z   ✓  188 [firefox] › tests/frontend-new/specs/timeslider_deeplink.spec.ts:29:3 › timeslider deep link › #rev/N hash boots into history mode at that revision (2.4s)
+2026-11-18T07:08:45.6856127Z   ✓  191 [firefox] › tests/frontend-new/specs/timeslider_deeplink.spec.ts:42:3 › timeslider deep link › legacy #N shortlink hash still enters history mode (1.7s)
+2026-11-18T07:08:46.0505360Z   ✓  190 [firefox] › tests/frontend-new/specs/timeslider_follow.spec.ts:15:3 › timeslider follow › content as it's added to timeslider (2.4s)
+2026-11-18T07:08:47.8058639Z   ✓  192 [firefox] › tests/frontend-new/specs/timeslider_follow.spec.ts:56:3 › timeslider follow › only to lines that exist in the pad view, regression test for #4389 (2.1s)
+2026-11-18T07:08:51.9013301Z   ✓  194 [firefox] › tests/frontend-new/specs/timeslider_identity_changeset.spec.ts:61:3 › Timeslider with identity changesets (bug #5214) › timeslider can scrub through all revisions without error (4.1s)
+2026-11-18T07:08:54.4725555Z   ✓  195 [firefox] › tests/frontend-new/specs/timeslider_line_numbers.spec.ts:9:3 › timeslider line numbers › shows line numbers aligned with the rendered document lines (2.6s)
+2026-11-18T07:08:54.7843152Z   ✓  193 [firefox] › tests/frontend-new/specs/timeslider_identity_changeset.spec.ts:17:3 › Timeslider with identity changesets (bug #5214) › timeslider playback advances through all revisions including identity changesets (8.7s)
+2026-11-18T07:08:55.1141235Z   ✓  196 [firefox] › tests/frontend-new/specs/timeslider_line_numbers.spec.ts:47:3 › timeslider line numbers › inherits and persists the line-number preference from the shared cookie (636ms)
+2026-11-18T07:08:56.4591093Z   ✓  197 [firefox] › tests/frontend-new/specs/timeslider_playback_speed.spec.ts:18:3 › timeslider playback speed › defaults to original speed with no cookies (1.7s)
+2026-11-18T07:08:57.4488902Z   ✓  198 [firefox] › tests/frontend-new/specs/timeslider_revision_labels.spec.ts:41:3 › timeslider revision labels › shows Version label and a valid date that update while scrubbing (2.3s)
+2026-11-18T07:08:58.4710242Z   ✓  199 [firefox] › tests/frontend-new/specs/timeslider_playback_speed.spec.ts:41:3 › timeslider playback speed › persists the selected playback speed (2.0s)
+2026-11-18T07:09:00.0169639Z   ✓  201 [firefox] › tests/frontend-new/specs/timeslider_playback_speed.spec.ts:76:3 › timeslider playback speed › uses revision timestamps for realtime playback (1.5s)
+2026-11-18T07:09:00.4551009Z   ✓  200 [firefox] › tests/frontend-new/specs/timeslider_saved_revisions.spec.ts:23:3 › timeslider saved-revision markers › a saved revision shows a marker on the outer history slider (3.0s)
+2026-11-18T07:09:00.9640725Z   ✓  202 [firefox] › tests/frontend-new/specs/timeslider.spec.ts:14:3 › history toolbar button enters in-pad history mode › history mode mounts iframe and sets #rev/ hash (935ms)
+2026-11-18T07:09:02.0218355Z   ✓  204 [firefox] › tests/frontend-new/specs/timeslider.spec.ts:49:3 › history toolbar button enters in-pad history mode › follow toggle eye icon does not overlap the speed control (1.0s)
+2026-11-18T07:09:02.5311034Z   ✓  205 [firefox] › tests/frontend-new/specs/unaccepted_commit_warning.spec.ts:5:3 › unaccepted commit warning › hasUnacceptedCommit clears once the server acknowledges the commit (501ms)
+2026-11-18T07:09:02.9494711Z   ✓  206 [firefox] › tests/frontend-new/specs/unaccepted_commit_warning.spec.ts:18:3 › unaccepted commit warning › disconnect with a pending commit surfaces the unsaved-edit gritter (410ms)
+2026-11-18T07:09:04.2692427Z   ✓  203 [firefox] › tests/frontend-new/specs/timeslider_saved_revisions.spec.ts:62:3 › timeslider saved-revision markers › a revision saved live appears on an already-open history slider (3.8s)
+2026-11-18T07:09:05.3895421Z   ✓  208 [firefox] › tests/frontend-new/specs/undo_clear_authorship.spec.ts:107:3 › undo clear authorship colors with multiple authors (bug #2802) › single user can undo clear authorship without disconnect @feature:clear-authorship (1.1s)
+2026-11-18T07:09:07.7466052Z   ✓  209 [firefox] › tests/frontend-new/specs/undo_redo_scroll.spec.ts:31:3 › Undo scroll-to-caret (#7007) › Ctrl+Z scrolls viewport up when the caret lands above the view (2.3s)
+2026-11-18T07:09:08.0366861Z   ✓  207 [firefox] › tests/frontend-new/specs/undo_clear_authorship.spec.ts:33:3 › undo clear authorship colors with multiple authors (bug #2802) › User B should not be disconnected after undoing clear authorship @feature:clear-authorship (5.1s)
+2026-11-18T07:09:08.6689757Z   ✓  211 [firefox] › tests/frontend-new/specs/undo.spec.ts:13:3 › undo button › undo some typing by clicking undo button (622ms)
+2026-11-18T07:09:09.1918493Z   ✓  212 [firefox] › tests/frontend-new/specs/undo.spec.ts:36:3 › undo button › undo some typing using a keypress (513ms)
+2026-11-18T07:09:09.6002841Z   ✓  213 [firefox] › tests/frontend-new/specs/unordered_list.spec.ts:11:5 › unordered_list.js › assign unordered list › insert unordered list text then removes by outdent (398ms)
+2026-11-18T07:09:10.0680630Z   ✓  214 [firefox] › tests/frontend-new/specs/unordered_list.spec.ts:32:5 › unordered_list.js › unassign unordered list › insert unordered list text then remove by clicking list again (459ms)
+2026-11-18T07:09:10.2451563Z   ✓  210 [firefox] › tests/frontend-new/specs/undo_redo_scroll.spec.ts:77:3 › Undo scroll-to-caret (#7007) › Ctrl+Z scrolls viewport down when the caret lands below the view (2.5s)
+2026-11-18T07:09:10.6952656Z   ✓  215 [firefox] › tests/frontend-new/specs/unordered_list.spec.ts:52:5 › unordered_list.js › keep unordered list on enter key › Keeps the unordered list on enter for the new line (618ms)
+2026-11-18T07:09:10.9095636Z   ✓  216 [firefox] › tests/frontend-new/specs/unordered_list.spec.ts:86:5 › unordered_list.js › Pressing Tab in an UL increases and decreases indentation › indent and de-indent list item with keypress (652ms)
+2026-11-18T07:09:11.2412032Z   ✓  217 [firefox] › tests/frontend-new/specs/unordered_list.spec.ts:111:5 › unordered_list.js › Pressing indent/outdent button in an UL increases and decreases indentation and bullet / ol formatting › indent and de-indent list item with indent button (537ms)
+2026-11-18T07:09:11.5561870Z   ✓  218 [firefox] › tests/frontend-new/specs/url_view_options.spec.ts:20:3 › URL-param view options apply on initial load (race-free) › ?showLineNumbers=false hides the line-number gutter on first paint (636ms)
+2026-11-18T07:09:11.9000783Z   ✓  219 [firefox] › tests/frontend-new/specs/url_view_options.spec.ts:29:3 › URL-param view options apply on initial load (race-free) › ?showLineNumbers=true keeps the gutter visible (no regression) (644ms)
+2026-11-18T07:09:12.1911660Z   ✓  220 [firefox] › tests/frontend-new/specs/url_view_options.spec.ts:38:3 › URL-param view options apply on initial load (race-free) › ?useMonospaceFont=true applies monospace on first paint (626ms)
+2026-11-18T07:09:13.0512791Z   ✓  222 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:15:5 › entering a URL makes a link › https://etherpad.org (850ms)
+2026-11-18T07:09:13.8132011Z   ✓  221 [firefox] › tests/frontend-new/specs/url_wrapping.spec.ts:10:3 › long URL wrapping in pad editor › long URLs should wrap instead of overflowing the editor (1.9s)
+2026-11-18T07:09:13.8351844Z   ✓  223 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:15:5 › entering a URL makes a link › www.etherpad.org (774ms)
+2026-11-18T07:09:14.6527191Z   ✓  224 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:15:5 › entering a URL makes a link › https://www.etherpad.org (829ms)
+2026-11-18T07:09:14.7700300Z   ✓  225 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/-foo (930ms)
+2026-11-18T07:09:16.2040471Z   ✓  227 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/@foo (1.4s)
+2026-11-18T07:09:16.2498106Z   ✓  226 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/:foo (1.6s)
+2026-11-18T07:09:17.1666275Z   ✓  228 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/_foo (954ms)
+2026-11-18T07:09:17.2540210Z   ✓  229 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/.foo (991ms)
+2026-11-18T07:09:18.1064331Z   ✓  230 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/,foo (934ms)
+2026-11-18T07:09:18.1616407Z   ✓  231 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/~foo (900ms)
+2026-11-18T07:09:19.0590231Z   ✓  232 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/%foo (944ms)
+2026-11-18T07:09:19.1177836Z   ✓  233 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/+foo (941ms)
+2026-11-18T07:09:19.9849513Z   ✓  234 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org//foo (919ms)
+2026-11-18T07:09:20.0481925Z   ✓  235 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/?foo (922ms)
+2026-11-18T07:09:20.9538271Z   ✓  236 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/=foo (962ms)
+2026-11-18T07:09:21.1263683Z   ✓  237 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/&foo (1.1s)
+2026-11-18T07:09:21.8929749Z   ✓  238 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/#foo (932ms)
+2026-11-18T07:09:22.0382231Z   ✓  239 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/!foo (898ms)
+2026-11-18T07:09:22.7291281Z   ✓  240 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/;foo (830ms)
+2026-11-18T07:09:22.9770694Z   ✓  241 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/(foo (928ms)
+2026-11-18T07:09:23.7077037Z   ✓  242 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/)foo (971ms)
+2026-11-18T07:09:23.8968357Z   ✓  243 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/[foo (906ms)
+2026-11-18T07:09:24.6745485Z   ✓  244 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/]foo (959ms)
+2026-11-18T07:09:24.8172839Z   ✓  245 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/$foo (904ms)
+2026-11-18T07:09:26.2193458Z   ✓  246 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/'foo (1.5s)
+2026-11-18T07:09:26.3049358Z   ✓  247 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:31:5 › special characters inside URL › https://etherpad.org/*foo (1.5s)
+2026-11-18T07:09:27.0821349Z   ✓  248 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:48:5 › punctuation after URL is ignored › https://etherpad.org: (851ms)
+2026-11-18T07:09:27.1908456Z   ✓  249 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:48:5 › punctuation after URL is ignored › https://etherpad.org. (872ms)
+2026-11-18T07:09:27.9099322Z   ✓  250 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:48:5 › punctuation after URL is ignored › https://etherpad.org, (821ms)
+2026-11-18T07:09:28.0158861Z   ✓  251 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:48:5 › punctuation after URL is ignored › https://etherpad.org; (816ms)
+2026-11-18T07:09:28.8368639Z   ✓  252 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:48:5 › punctuation after URL is ignored › https://etherpad.org? (920ms)
+2026-11-18T07:09:28.9325796Z   ✓  253 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:48:5 › punctuation after URL is ignored › https://etherpad.org! (901ms)
+2026-11-18T07:09:29.8893190Z   ✓  254 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:48:5 › punctuation after URL is ignored › https://etherpad.org) (1.0s)
+2026-11-18T07:09:29.9664050Z   ✓  255 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:48:5 › punctuation after URL is ignored › https://etherpad.org] (1.0s)
+2026-11-18T07:09:30.8282823Z   ✓  256 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:48:5 › punctuation after URL is ignored › https://etherpad.org' (925ms)
+2026-11-18T07:09:30.9759249Z   ✓  257 [firefox] › tests/frontend-new/specs/urls_become_clickable.spec.ts:48:5 › punctuation after URL is ignored › https://etherpad.org* (997ms)
+2026-11-18T07:09:33.3206385Z   ✓  258 [firefox] › tests/frontend-new/specs/userlist_click_to_chat.spec.ts:33:3 › userlist click → chat prefill › clicking another user opens chat and prefills @<name> @feature:chat @feature:username (2.5s)
+2026-11-18T07:09:33.6911212Z   ✓  259 [firefox] › tests/frontend-new/specs/userlist_click_to_chat.spec.ts:72:3 › userlist click → chat prefill › clicking the swatch opens the color picker, not chat @feature:chat @feature:username (2.7s)
+2026-11-18T07:09:35.2225946Z   ✓  260 [firefox] › tests/frontend-new/specs/userlist_click_to_chat.spec.ts:104:3 › userlist click → chat prefill › clicking the rename input on an unnamed user does not steal focus @feature:chat @feature:username (1.9s)
+2026-11-18T07:09:35.9807557Z   ✓  261 [firefox] › tests/frontend-new/specs/userlist_click_to_chat.spec.ts:140:3 › userlist click → chat prefill › partial message in chat input is preserved when prefilling @feature:chat @feature:username (2.3s)
+2026-11-18T07:09:37.5637712Z   ✓  262 [firefox] › tests/frontend-new/specs/wcag_author_color.spec.ts:70:3 › WCAG author colour (issue #7377) › issue scenario: #9AB3FA renders >= AA against the author text @feature:authorship-bg-color (2.3s)
+2026-11-18T07:09:38.4796610Z   ✓  263 [firefox] › tests/frontend-new/specs/wcag_author_color.spec.ts:79:3 › WCAG author colour (issue #7377) › pure red #ff0000 renders >= AA after the clamp @feature:authorship-bg-color (2.5s)
+2026-11-18T07:09:38.7913425Z   ✓  265 [firefox] › tests/frontend-new/specs/welcome.spec.ts:69:5 › Session Transfer Functionality › creating a transfer code › should open settings dialog and transfer session (301ms)
+2026-11-18T07:09:39.1544089Z   ✓  266 [firefox] › tests/frontend-new/specs/welcome.spec.ts:84:5 › Session Transfer Functionality › creating a transfer code › should copy transfer ID to clipboard (351ms)
+2026-11-18T07:09:39.4492894Z   ✓  267 [firefox] › tests/frontend-new/specs/welcome.spec.ts:99:5 › Session Transfer Functionality › creating a transfer code › should show a localized error and stay usable after a 400 response (284ms)
+2026-11-18T07:09:39.6225171Z   ✓  264 [firefox] › tests/frontend-new/specs/wcag_author_color.spec.ts:88:3 › WCAG author colour (issue #7377) › already-AA-friendly #ffeedd is rendered unchanged @feature:authorship-bg-color (2.0s)
+2026-11-18T07:09:39.7321642Z   ✓  268 [firefox] › tests/frontend-new/specs/welcome.spec.ts:115:5 › Session Transfer Functionality › creating a transfer code › should never render server-supplied error content (273ms)
+2026-11-18T07:09:39.9528872Z   ✓  269 [firefox] › tests/frontend-new/specs/welcome.spec.ts:132:7 › Session Transfer Functionality › creating a transfer code › should treat a create response 2xx without an id as a failure (316ms)
+2026-11-18T07:09:40.0492654Z   ✓  270 [firefox] › tests/frontend-new/specs/welcome.spec.ts:132:7 › Session Transfer Functionality › creating a transfer code › should treat a create response 2xx with an invalid id as a failure (306ms)
+2026-11-18T07:09:40.2778600Z   ✓  271 [firefox] › tests/frontend-new/specs/welcome.spec.ts:132:7 › Session Transfer Functionality › creating a transfer code › should treat a create response non-2xx with an id as a failure (313ms)
+2026-11-18T07:09:40.4167480Z   ✓  272 [firefox] › tests/frontend-new/specs/welcome.spec.ts:144:5 › Session Transfer Functionality › creating a transfer code › should treat a non-JSON create response as a failure (349ms)
+2026-11-18T07:09:40.6864215Z   ✓  273 [firefox] › tests/frontend-new/specs/welcome.spec.ts:157:5 › Session Transfer Functionality › creating a transfer code › should not expose copy state after a network failure (398ms)
+2026-11-18T07:09:40.8406181Z   ✓  274 [firefox] › tests/frontend-new/specs/welcome.spec.ts:168:5 › Session Transfer Functionality › creating a transfer code › should hide a previous error when retrying succeeds (407ms)
+2026-11-18T07:09:41.1985958Z   ✓  275 [firefox] › tests/frontend-new/specs/welcome.spec.ts:184:5 › Session Transfer Functionality › creating a transfer code › should keep the transfer code if the dialog is closed mid-request (505ms)
+2026-11-18T07:09:41.3757770Z   ✓  276 [firefox] › tests/frontend-new/specs/welcome.spec.ts:205:5 › Session Transfer Functionality › redeeming a transfer code › should receive session with valid code (523ms)
+2026-11-18T07:09:41.8294277Z   ✓  277 [firefox] › tests/frontend-new/specs/welcome.spec.ts:229:7 › Session Transfer Functionality › redeeming a transfer code › should not reload and should preserve code after a missing transfer id (404) (618ms)
+2026-11-18T07:09:41.9272959Z   ✓  278 [firefox] › tests/frontend-new/specs/welcome.spec.ts:229:7 › Session Transfer Functionality › redeeming a transfer code › should not reload and should preserve code after an expired transfer id (410) (526ms)
+2026-11-18T07:09:42.4839204Z   ✓  279 [firefox] › tests/frontend-new/specs/welcome.spec.ts:229:7 › Session Transfer Functionality › redeeming a transfer code › should not reload and should preserve code after a 2xx response without ok:true (638ms)
+2026-11-18T07:09:42.9423656Z   ✓  281 [firefox] › tests/frontend-new/specs/welcome.spec.ts:267:5 › Session Transfer Functionality › redeeming a transfer code › should not reload after a network failure (447ms)
+2026-11-18T07:09:43.4177401Z   ✓  282 [firefox] › tests/frontend-new/specs/welcome.spec.ts:281:5 › Session Transfer Functionality › redeeming a transfer code › should hide the error when the code is edited (462ms)
+2026-11-18T07:09:43.4409958Z   ✓  280 [firefox] › tests/frontend-new/specs/welcome.spec.ts:250:5 › Session Transfer Functionality › redeeming a transfer code › should not reload when receive response is not valid JSON (1.5s)
+2026-11-18T07:09:43.9723557Z   ✓  284 [firefox] › tests/frontend-new/specs/welcome.spec.ts:310:5 › Session Transfer Functionality › redeeming a transfer code › should disable the button when the code becomes invalid during a failed request (506ms)
+2026-11-18T07:09:44.4215439Z   ✓  285 [firefox] › tests/frontend-new/specs/welcome.spec.ts:330:5 › Session Transfer Functionality › redeeming a transfer code › should not allow a second redemption while one is pending (434ms)
+2026-11-18T07:09:44.5735763Z   ✓  283 [firefox] › tests/frontend-new/specs/welcome.spec.ts:294:5 › Session Transfer Functionality › redeeming a transfer code › should keep transfer button disabled for invalid codes (1.1s)
+2026-11-18T07:09:44.9411082Z   ✓  286 [firefox] › tests/frontend-new/specs/welcome.spec.ts:358:5 › Session Transfer Functionality › settings dialog › should switch between tabs in settings dialog (497ms)
+2026-11-18T07:09:45.0073588Z   ✓  287 [firefox] › tests/frontend-new/specs/welcome.spec.ts:373:5 › Session Transfer Functionality › settings dialog › should close dialog when clicking outside (421ms)
+2026-11-18T07:09:45.6598592Z 
+2026-11-18T07:09:45.6604334Z   2 skipped
+2026-11-18T07:09:45.6604526Z   285 passed (2.9m)
+2026-11-18T07:09:45.6991963Z ##[group]Run actions/upload-artifact@v7
+2026-11-18T07:09:45.6992184Z with:
+2026-11-18T07:09:45.6992340Z   name: results-blacksmith-4-firefox
+2026-11-18T07:09:45.6992516Z   path: results.json
+2026-11-18T07:09:45.6992658Z   retention-days: 30
+2026-11-18T07:09:45.6992809Z   if-no-files-found: warn
+2026-11-18T07:09:45.6992968Z   compression-level: 6
+2026-11-18T07:09:45.6993112Z   overwrite: false
+2026-11-18T07:09:45.6993258Z   include-hidden-files: false
+2026-11-18T07:09:45.6993418Z   archive: true
+2026-11-18T07:09:45.6993554Z env:
+2026-11-18T07:09:45.6993708Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-18T07:09:45.6993973Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 213
+2026-11-18T07:09:45.6994156Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 780
+2026-11-18T07:09:45.6994416Z   GITHUB_REPO_NAME: BluebagAI/bench-etherpad-lite
+2026-11-18T07:09:45.6994605Z ##[endgroup]
+2026-11-18T07:09:45.7946390Z With the provided path, there will be 1 file uploaded
+2026-11-18T07:09:45.7948452Z Artifact name is valid!
+2026-11-18T07:09:45.7948870Z Root directory input is valid!
+2026-11-18T07:09:46.2113387Z Uploading artifact: results-blacksmith-4-firefox.zip
+2026-11-18T07:09:46.2148168Z Beginning upload of artifact content to blob storage
+2026-11-18T07:09:46.5243671Z Uploaded bytes 26251
+2026-11-18T07:09:46.5869095Z Finished uploading artifact content to blob storage!
+2026-11-18T07:09:46.5869529Z SHA256 digest of uploaded artifact is 2a8cb8ab0f05fff77dac64e6e8ca8c80890dc657ed148f7a2d665bc9a24f63c6
+2026-11-18T07:09:46.5869857Z Finalizing artifact upload
+2026-11-18T07:09:47.1025878Z Artifact results-blacksmith-4-firefox successfully finalized. Artifact ID 14406685013
+2026-11-18T07:09:47.1026665Z Artifact results-blacksmith-4-firefox has been successfully uploaded! Final size is 26251 bytes. Artifact ID is 14406685013
+2026-11-18T07:09:47.1027465Z Artifact download URL: https://github.com/BluebagAI/bench-etherpad-lite/actions/runs/44256252884/artifacts/14406685013
+2026-11-18T07:09:47.1146877Z Post job cleanup.
+2026-11-18T07:09:47.1839586Z Cache hit occurred on the primary key node-cache-Linux-x64-pnpm-d6428897bbeaf16a3ec91521a8ce44c456af69cd4b95c6f95687df54612db556, not saving cache.
+2026-11-18T07:09:47.1887376Z Post job cleanup.
+2026-11-18T07:09:47.2722732Z Pruning is unnecessary.
+2026-11-18T07:09:47.3158426Z Post job cleanup.
+2026-11-18T07:09:47.3853329Z Cache hit occurred on the primary key Linux-playwright-31ef7bd5f30c4727b0e0bee005389c5796459918031710bea412d2818bda471e, not saving cache.
+2026-11-18T07:09:48.7132789Z Post job cleanup.
+2026-11-18T07:09:48.7936218Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/_work/bench-etherpad-lite/bench-etherpad-lite --files-from manifest.txt --use-compress-program zstdmt
+2026-11-18T07:09:50.2968150Z Failed to save: Unable to reserve cache with key Linux-pnpm-store-d6428897bbeaf16a3ec91521a8ce44c456af69cd4b95c6f95687df54612db556, another job may be creating this cache.
+2026-11-18T07:09:50.3182631Z Post job cleanup.
+2026-11-18T07:09:50.3680856Z [command]/usr/local/bin/git version
+2026-11-18T07:09:50.3713453Z git version 2.55.0
+2026-11-18T07:09:50.3731169Z Temporarily overriding HOME='/home/runner/_work/_temp/bb545369-2d19-4800-b587-6db8335d2333' before making global git config changes
+2026-11-18T07:09:50.3731732Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-18T07:09:50.3734845Z [command]/usr/local/bin/git config --global --add safe.directory /home/runner/_work/bench-etherpad-lite/bench-etherpad-lite
+2026-11-18T07:09:50.3760837Z Removing SSH command configuration
+2026-11-18T07:09:50.3765117Z [command]/usr/local/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T07:09:50.3797415Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T07:09:50.3928508Z Removing HTTP extra header
+2026-11-18T07:09:50.3932583Z [command]/usr/local/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T07:09:50.3967295Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T07:09:50.4116494Z Removing includeIf entries pointing to credentials config files
+2026-11-18T07:09:50.4121891Z [command]/usr/local/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T07:09:50.4145576Z includeif.gitdir:/home/runner/_work/bench-etherpad-lite/bench-etherpad-lite/.git.path
+2026-11-18T07:09:50.4146039Z includeif.gitdir:/home/runner/_work/bench-etherpad-lite/bench-etherpad-lite/.git/worktrees/*.path
+2026-11-18T07:09:50.4146392Z includeif.gitdir:/github/workspace/.git.path
+2026-11-18T07:09:50.4146693Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-18T07:09:50.4155070Z [command]/usr/local/bin/git config --local --get-all includeif.gitdir:/home/runner/_work/bench-etherpad-lite/bench-etherpad-lite/.git.path
+2026-11-18T07:09:50.4191086Z /home/runner/_work/_temp/git-credentials-bfbe0ead-aa6e-4333-80ac-8e0c952e5401.config
+2026-11-18T07:09:50.4199123Z [command]/usr/local/bin/git config --local --unset includeif.gitdir:/home/runner/_work/bench-etherpad-lite/bench-etherpad-lite/.git.path \/home\/runner\/_work\/_temp\/git\-credentials\-bfbe0ead\-aa6e\-4333\-80ac\-8e0c952e5401\.config
+2026-11-18T07:09:50.4231648Z [command]/usr/local/bin/git config --local --get-all includeif.gitdir:/home/runner/_work/bench-etherpad-lite/bench-etherpad-lite/.git/worktrees/*.path
+2026-11-18T07:09:50.4253264Z /home/runner/_work/_temp/git-credentials-bfbe0ead-aa6e-4333-80ac-8e0c952e5401.config
+2026-11-18T07:09:50.4259131Z [command]/usr/local/bin/git config --local --unset includeif.gitdir:/home/runner/_work/bench-etherpad-lite/bench-etherpad-lite/.git/worktrees/*.path \/home\/runner\/_work\/_temp\/git\-credentials\-bfbe0ead\-aa6e\-4333\-80ac\-8e0c952e5401\.config
+2026-11-18T07:09:50.4284276Z [command]/usr/local/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-18T07:09:50.4305243Z /github/runner_temp/git-credentials-bfbe0ead-aa6e-4333-80ac-8e0c952e5401.config
+2026-11-18T07:09:50.4310016Z [command]/usr/local/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-bfbe0ead\-aa6e\-4333\-80ac\-8e0c952e5401\.config
+2026-11-18T07:09:50.4335557Z [command]/usr/local/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-18T07:09:50.4356977Z /github/runner_temp/git-credentials-bfbe0ead-aa6e-4333-80ac-8e0c952e5401.config
+2026-11-18T07:09:50.4362435Z [command]/usr/local/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-bfbe0ead\-aa6e\-4333\-80ac\-8e0c952e5401\.config
+2026-11-18T07:09:50.4392003Z [command]/usr/local/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T07:09:50.4518669Z Removing credentials config '/home/runner/_work/_temp/git-credentials-bfbe0ead-aa6e-4333-80ac-8e0c952e5401.config'
+2026-11-18T07:09:50.4577254Z A job completed hook has been configured by the self-hosted runner administrator
+2026-11-18T07:09:50.4593730Z ##[group]Run '/job_completed.sh'
+2026-11-18T07:09:50.4602550Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-18T07:09:50.4602783Z env:
+2026-11-18T07:09:50.4602950Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 213
+2026-11-18T07:09:50.4603150Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 780
+2026-11-18T07:09:50.4603340Z   BLACKSMITH_CHECK_RUN_ID: 134638536446
+2026-11-18T07:09:50.4603574Z   BLACKSMITH_JOB_DISPLAY_NAME: Playwright Firefox (blacksmith-4)
+2026-11-18T07:09:50.4603814Z   GITHUB_ACTIONS_CACHE_MODE: write
+2026-11-18T07:09:50.4603991Z ##[endgroup]
+2026-11-18T07:09:50.4710990Z Docker container cache not activated, skipping hash computation.
+2026-11-18T07:09:50.5078709Z No active SSH sessions detected. Proceeding with shutdown immediately.
+2026-11-18T07:09:50.5147044Z Cleaning up orphan processes
+2026-11-18T07:09:50.5522669Z Terminate orphan process: pid (3952) (pnpm)
+2026-11-18T07:09:50.5558536Z Terminate orphan process: pid (3977) (sh)
+2026-11-18T07:09:50.5581221Z Terminate orphan process: pid (3978) (pnpm)
+2026-11-18T07:09:50.5605888Z Terminate orphan process: pid (4001) (sh)
+2026-11-18T07:09:50.5630331Z Terminate orphan process: pid (4002) (MainThread)
+2026-11-18T07:09:50.5654949Z Terminate orphan process: pid (4013) (MainThread)
+2026-11-18T07:09:50.5689889Z Terminate orphan process: pid (4021) (esbuild)
+2026-11-18T07:09:50.5746976Z Terminate orphan process: pid (5947) (esbuild)
